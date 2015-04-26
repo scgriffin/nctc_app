@@ -4,7 +4,10 @@
 <meta charset="utf-8">
 <title>Untitled Document</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
+
 <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+<link rel="stylesheet" type="text/css" href="css/panel.css">
+
 <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
 <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
 
@@ -12,30 +15,105 @@
 
 <body>
 
-<div data-role="page">
-
-	<div data-role="header">
-    	<h1>Naval Construction Training Center</h1>
-        	<a href="#" data-icon="gear" class="ui-btn-right">Options</a>
-           <div data-role="navbar">
-           		<ul>
-                	<li><a href="#">Command</a></li>
-                    <li><a href="#">Staff</a></li>
-                    <li><a href="#">Student</a></li>
-                    <li><a href="#">21st</a></li>
-                    <li><a href="#">Five</a></li>
-                </ul>
-           </div>  
+<div data-role="page" id="mypage" data-url="mypage">
     
+    <div data-role="header">
+    	<h1>Naval Construction Training Center</h1>
+            <a href="#left-panel" data-icon="bars" data-iconpos="notext" data-shadow="false" data-iconshadow="false">Menu</a>
+            <a href="#right-panel" data-icon="bars" data-iconpos="notext" data-shadow="false" data-iconshadow="false">Disclosures</a>
     </div>
 
-	<div role="main" class="ui-content">...</div>
+	<div role="main" class="ui-content">
+    
+    	<div align="center">
+        	
+            <img src="http://www.netc.navy.mil/centers/csfe/gulfport/images/webuild.gif" />
+        
+        </div>
+    
+    </div>
+    
+        <div data-role="panel" id="left-panel" data-display="overlay" >
+        <ul data-role="listview">
+        
+            <li data-icon="delete"><a href="#" data-rel="close">Close</a></li>
+            <!--<li data-icon="back"><a href="#demo-intro" data-rel="back">Demo intro</a></li>-->
+            <li data-role="collapsible" data-inset="false" data-iconpos="right">
+              <h3>Command</h3>
+              <ul data-role="listview">
+                <li><a href="#">Road</a></li>
+                <li><a href="#">ATB</a></li>
+                <li><a href="#">Fixed Gear</a></li>
+                <li><a href="#">Cruiser</a></li>
+              </ul>
+            </li><!-- /collapsible -->
+            <li data-role="collapsible" data-inset="false" data-iconpos="right">
+              <h3>Staff</h3>
+              <ul data-role="listview">
+                <li><a href="#">SUV</a></li>
+                <li><a href="#">Sport</a></li>
+                <li><a href="#">Convertible</a></li>
+              </ul>
+            </li><!-- /collapsible -->
+            <li data-role="collapsible" data-inset="false" data-iconpos="right">
+              <h3>Students</h3>
+              <ul data-role="listview">
+                <li><a href="#">Runabout</a></li>
+                <li><a href="#">Motorboat</a></li>
+                <li><a href="#">Sailboat</a></li>
+              </ul>
+            </li><!-- /collapsible -->
+        </ul>
+    </div><!-- /panel -->
+    
+    
+    <div data-role="panel" id="right-panel" data-display="overlay" data-position="right">
+        <ul data-role="listview" data-icon="false">
+            <li data-icon="delete"><a href="#" data-rel="close">Close</a></li>
+            <!--<li data-role="list-divider">Share this page</li>-->
+            <li><a href="http://www.netc.navy.mil/Default.aspx">NETC</a></li>
+            <li><a href="http://www.netc.navy.mil/centers/csfe/">CSFE</a></li>
+            <li><a href="policy.html" rel="external">Privacy Policy</a></li>
+            <li><a href="#">CSFE PAO</a></li>            
+        </ul>
+        <br /><br />
+        <div align="center">
+        <img src="https://c2.staticflickr.com/6/5106/5579860783_a17e6b4b07.jpg" />
+        <img src="http://norbay.com/sites/norbay.com/files/imagecache/featured_product_thumbnail/p53-n.jpg" />
+        </div>
+    </div><!-- /panel -->
 
-	<div data-role="footer">...</div>
+	<div data-role="footer" data-position="fixed" data-tap-toggle="false">
+    
+    	<div align="center">
+        	<a href="http://www.navy.com" rel="external" target="_blank"><img src="http://www.netc.navy.mil/images/ico_navyj.gif" /></a>
+            <a href="http://www.navy.mil" rel="external" target="_blank"><img src="http://www.netc.navy.mil/images/ico_usnavy.gif" /></a>
+            <a href="http://www.public.navy.mil/donhr/pages/nofear.aspx" rel="external" target="_blank">
+            <img src="http://www.netc.navy.mil/images/nofearlogo.gif" /></a>
+            <a href="https://www.foia.navy.mil/" rel="external" target="_blank"><img src="http://www.netc.navy.mil/images/navyfoia.gif" /></a>
+            <a href="http://www.safetycenter.navy.mil/" rel="external" target="_blank"><img src="http://www.netc.navy.mil/images/naval_safety_center.jpg" /></a>
+        </div>
+        
+    </div>
 
 </div>
 
 
+<div data-role="page" id="panel-responsive-page2">
+
+    <div data-role="header">
+        <h1>Landing page</h1>
+    </div><!-- /header -->
+
+    <div role="main" class="ui-content jqm-content">
+
+        <p>This is just a landing page.</p>
+
+        <a href="#panel-responsive-page1" class="ui-btn ui-shadow ui-corner-all ui-btn-inline ui-mini ui-icon-back ui-btn-icon-left">Back</a>
+
+    </div><!-- /content -->
+
+</div><!-- /page -->
 
 
 </body>
