@@ -7,10 +7,11 @@
 
 <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
 <link rel="stylesheet" type="text/css" href="css/panel.css">
+<link rel="stylesheet" type="text/css" href="scripts/nctctheme02/themes/nctctheme02.css">
+<link rel="stylesheet" type="text/css" href="scripts/nctctheme02/themes/jquery.mobile.icons.min.css">
 
 <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
 <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
-
 
 <script type="text/javascript">
 $(document).ready(function() 
@@ -45,7 +46,7 @@ if (!hash) {
 
 <body>
 
-<div data-role="page" id="mypage" data-url="mypage">
+<div data-role="page" id="mypage" data-url="mypage" data-theme="a">
     
     <div data-role="header" data-position="fixed" data-tap-toggle="false">
     	<h1>Naval Construction Training Center</h1>
@@ -58,16 +59,18 @@ if (!hash) {
     	<div align="center">
         	<br /><br/>
         	  <img src="http://www.netc.navy.mil/centers/csfe/gulfport/images/webuild.gif" /><br/><br/>
-        	<img src="images/honeycomb.png" alt=""/>
+        	<img src="images/nctcHoneyComb.png" alt=""/>
     	</div>
     
     </div>
     
         <div data-role="panel" id="left-panel" data-display="overlay" >
-        <ul data-role="listview">
         
-            <li data-icon="delete"><a href="#" data-rel="close">Close</a></li>
+        <ul data-role="listview">
+       <!-- <div data-role="content">-->
+           <!-- <li data-icon="delete"><a href="#" data-rel="close">Close</a></li>-->
             <!--<li data-icon="back"><a href="#demo-intro" data-rel="back">Demo intro</a></li>-->
+            
             <li data-role="collapsible" data-inset="false" data-iconpos="right">
               <h3>Command</h3>
               <ul data-role="listview">
@@ -91,8 +94,10 @@ if (!hash) {
                 <li><a href="#">"A" Schools</a></li>
                 <li><a href="#">Liberty Events</a></li>
               </ul>
-            </li><!-- /collapsible -->
+            </li>
+           <!--</div>--> <!-- /collapsible --> 
         </ul>
+        
     </div><!-- /panel -->
     
     
@@ -151,7 +156,7 @@ if (!hash) {
             <a href="#right-panel-policy" data-icon="bars" data-iconpos="notext" data-shadow="false" data-iconshadow="false">Disclosures</a>
     </div>
 
-	<div role="main" class="ui-content">
+	<div data-role="main" class="ui-content">
     	<div align="center">
     	<h2>Privacy Policy</h2>
         </div>
@@ -253,12 +258,13 @@ if (!hash) {
 
     </div>
     
-        <div data-role="panel" id="left-panel-policy" data-display="overlay" >
+        <div data-role="panel" id="left-panel-policy" data-display="overlay">
         <ul data-role="listview">
         
-            <li data-icon="delete"><a href="#" data-rel="close">Close</a></li>
+            <!--<li data-icon="delete"><a href="#" data-rel="close">Close</a></li>-->
             <li><a href="#mypage">Home</a></li>
-            <li data-role="collapsible" data-inset="false" data-iconpos="right">
+                        
+            <li data-role="collapsible" data-inset="false" data-iconpos="right" data-content-theme="">
               <h3>Command</h3>
               <ul data-role="listview">
                 <li><a href="#">Mission</a></li>
@@ -281,9 +287,10 @@ if (!hash) {
                 <li><a href="#">"A" Schools</a></li>
                 <li><a href="#">Liberty Events</a></li>
               </ul>
-            </li><!-- /collapsible -->
+            </li>
+            <!-- /collapsible -->
         </ul>
-    </div><!-- /panel -->
+   </div><!-- /panel -->
     
     
     <div data-role="panel" id="right-panel-policy" data-display="overlay" data-position="right">
