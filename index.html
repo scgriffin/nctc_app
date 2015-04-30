@@ -7,9 +7,9 @@
 
 <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
 <link rel="stylesheet" type="text/css" href="css/panel.css">
-<link rel="stylesheet" type="text/css" href="scripts/nctctheme03/themes/nctctheme03.css">
-<link rel="stylesheet" type="text/css" href="scripts/nctctheme03/themes/jquery.mobile.icons.min.css">
-
+<!--<link rel="stylesheet" type="text/css" href="scripts/nctctheme03/themes/nctctheme03.css">
+--><link rel="stylesheet" type="text/css" href="scripts/nctctheme03/themes/jquery.mobile.icons.min.css">
+<link rel="stylesheet" type="text/css" href="css/classic.css">
 <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
 <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
 
@@ -46,7 +46,7 @@ if (!hash) {
 
 <body>
 
-<div data-role="page" id="mypage" data-url="mypage" data-theme="c">
+<div data-role="page" id="mypage" data-url="mypage" data-theme="b">
     
     <div data-role="header" data-position="fixed" data-tap-toggle="false">
     	<h1>Naval Construction <br />Training Center</h1>
@@ -939,7 +939,7 @@ if (!hash) {
 <!--End Adv Schools-->
 
 <!--A School-->
-<div data-role="page" id="a-school" data-url="a-school" data-theme="c">
+<div data-role="page" id="a-school" data-url="a-school" data-theme="a">
 
   <div data-role="header" data-position="fixed" data-tap-toggle="false">
     <h1>Naval Construction<br /> Training Center</h1>
@@ -948,18 +948,28 @@ if (!hash) {
         <a href="#right-panel-a-school" data-icon="bars" data-iconpos="notext" 
         data-shadow="false" data-iconshadow="false">Disclosures</a>
         <!--<div data-role="navbar" data-grid="b">
-            	<ul>
+        	<ul>
+        	<li><a data-rel="popup" href="#appendix02" class="ui-btn ui-icon-grid ui-btn-icon-left ui-btn-inline">Appendix</a></li>
+            </ul>	<ul>
                 	<li><a href="#">Annual</a></li>
                     <li><a href="#">Short Notice Req</a></li>
                     <li><a href="#">ESAMS</a></li>                   
                 </ul>
             </div>-->
   </div>
+  <!--<div data-role="popup" id="appendix02" data-theme="b">
+    <ul data-role="listview">
+      <li><a href="#">Appendix IV</a></li>
+      <li><a href="#">Appendix III</a></li>
+      <li><a href="#">Appendix II</a></li>
+      <li><a href="#">Appendix I</a></li>
+    </ul>
+  </div>/popup-->
   
   <div data-role="content">
 		<div align="center">
         	<h3>A Schools</h3>
-    	</div>    
+    	</div>   
   
    </div>
   
@@ -1028,10 +1038,28 @@ if (!hash) {
         <img src="https://c2.staticflickr.com/6/5106/5579860783_a17e6b4b07.jpg" />
         
         </div>
+        
     </div><!-- /panel -->
   
-  <div data-role="footer" data-position="fixed" data-tap-toggle="false">
+  	<div data-role="popup" id="appendix01" data-theme="b">
+    <ul data-role="listview">
+      <li><a href="../app/app04.html" rel="external">Appendix IV</a></li>
+      <li><a href="../app/app03.html" rel="external">Appendix III</a></li>
+      <li><a href="../app/app02.html" rel="external">Appendix II</a></li>
+      <li><a href="../app/app01.html" rel="external">Appendix I</a></li>
+    </ul>
+  </div><!--/popup-->
   
+  <div data-role="footer" data-position="fixed" data-tap-toggle="false">
+  	<div data-role="navbar">
+      <ul>
+        <li><a class="ui-btn ui-icon-home ui-btn-icon-left ui-btn-inline" href="../index.html" rel="external">Home</a></li>
+        <li><a data-rel="popup" href="#appendix01" class="ui-btn ui-icon-grid ui-btn-icon-left ui-btn-inline">Appendix</a></li>
+        <!--<li><a href="#" class="ui-btn ui-icon-home ui-btn-icon-left ui-btn-inline">Home</a></li>-->
+        <li><a href="#admin-duties" class="ui-btn ui-icon-info ui-btn-icon-left ui-btn-inline">2.0.0</a></li>
+      </ul>
+    </div><!--/navbar-->
+ 
     <div align="center">
         	<a href="http://www.navy.com" rel="external" target="_blank"><img src="http://www.netc.navy.mil/images/ico_navyj.gif" /></a>
             <a href="http://www.navy.mil" rel="external" target="_blank"><img src="http://www.netc.navy.mil/images/ico_usnavy.gif" /></a>
@@ -1058,7 +1086,7 @@ if (!hash) {
 <!--Right Panel Pages-->
 <!--Policy-->
 
-<div data-role="page" id="policy" data-url="policy" data-theme="c">
+<div data-role="page" id="policy" data-url="policy" data-theme="b">
     
     <div data-role="header" data-position="fixed" data-tap-toggle="false">
     	<h1>Naval Construction<br /> Training Center</h1>
