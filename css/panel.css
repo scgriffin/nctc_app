@@ -101,3 +101,24 @@ img, object{
         -webkit-transform: translate3d(0,0,0);
     }
 }
+
+/*@media all and (max-width: 50em) {
+	.my-breakpoint ui-block-a,
+	.my-breakpoint ui-block-b,
+	.my-breakpoint ui-block-c,
+	.my-breakpoint ui-block-d,
+	.my-breakpoint ui-block-e {
+		width: 100%;
+		float:none;
+		
+	}
+}*/
+
+/*.ui-block-a, .ui-block-b, .ui-block-c, .ui-block-d, .ui-block-e {
+	background-color: lightgray;
+	border: 1px solid black;
+	height: 80px;
+	font-weight: bold;
+	text-align:center;
+	padding: 30px;
+}*/
