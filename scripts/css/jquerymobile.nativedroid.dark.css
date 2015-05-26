@@ -300,11 +300,17 @@ code,pre {
 	text-shadow: 1px 1px 1px rgba(0,0,0,0.6);
 	padding: 3px;
 }
-
+/*change background color of cards*/
 .nativeDroidCards > li {
 	border: 1px solid rgba(255,255,255,0.1);
 	box-shadow: 0px 2px 4px rgba(0,0,0,0.2);
-	background-color: rgba(255,255,255,0.1);
+	/*background-color: rgba(192,0,0,0.3);255,255,255,0.1*/
+}
+
+.nativeDroidCards2 > li {
+	border: 1px solid rgba(255,255,255,0.1);
+	box-shadow: 0px 2px 4px rgba(0,0,0,0.2);
+	background-color: rgba(0,0,0,0.1);/*255,255,255,0.1*/
 }
 
 .nativeDroidCards table td,.nativeDroidCards a {

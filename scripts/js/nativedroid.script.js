@@ -130,10 +130,24 @@ $(document).on("pageinit", function() {
 						nativeDroid.plugins.cards.create[type]($(this));
 					});
 				},
+				
 				create : {
 					text : function(obj) {
 						console.log("text");
 					},
+					
+					text2 : function(obj) {
+						console.log("text2");
+					},
+				
+					text3 : function(obj) {
+						console.log("text3");
+					},
+					
+					text4 : function(obj) {
+						console.log("text4");
+					},	
+					
 					traffic : function(obj) {
 						route = obj.data("cards-traffic-route");
 						obj.find(".map").html("Display a route-map here [from: " + route.from + ", to: " + route.to + "]");
@@ -151,6 +165,8 @@ $(document).on("pageinit", function() {
 					}
 				}
 			},
+			
+	
 			twitter : {
 				container : false,
 				results : {

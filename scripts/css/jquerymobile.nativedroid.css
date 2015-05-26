@@ -989,6 +989,29 @@ progress  {
 	font-size: 18px;
 }
 
+ul {
+   display: inline-table;
+   list-style: none;
+   margin: 0px 25px 0px 25px;
+  }
+ 
+.nativeDroidCards > [data-cards-type="text"] {
+	background-color: #CB3C3F;
+}
+
+.nativeDroidCards > [data-cards-type="text2"] {
+	background-color: #9B8740;
+}
+
+.nativeDroidCards > [data-cards-type="text3"] {
+	background-color: #6FD1C7;
+}
+
+.nativeDroidCards > [data-cards-type="text4"] {
+	background-color: #6FC3EC;
+		
+}
+
 .nativeDroidCards > li[data-cards-type="weather"] ul {
 	list-style: none;
 	padding: 0px;

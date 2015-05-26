@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html>
     <head>
-        <title>nativeDroid - Theme for jQuery Mobile - cards</title>
+        <title></title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 		
 		<!-- FontAwesome - http://fortawesome.github.io/Font-Awesome/ -->
@@ -17,7 +17,7 @@
         <link rel="stylesheet" href="scripts/css/jquerymobile.nativedroid.dark.css"  id='jQMnDTheme' />
 
 		<!-- nativeDroid: Color Schemes -->
-        <link rel="stylesheet" href="scripts/css/jquerymobile.nativedroid.color.green.css" id='jQMnDColor' />
+        <link rel="stylesheet" href="scripts/css/jquerymobile.nativedroid.color.blue.css" id='jQMnDColor' />
 
 		<!-- jQuery / jQueryMobile Scripts -->
 		<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
@@ -29,124 +29,179 @@
 
     </head>
     <body>
-
-	<div id='map-canvas'></div>
-        
+	      
     <div data-role="page" data-theme='b'>
-
+		<div data-role="panel" id="nav-panel" data-theme="b"> 
+        <ul data-role="listview">
+          <li data-icon="delete"><a href="#" data-rel="close">Close menu</a></li>
+          <li><a href="../index.html" rel="external">Home</a></li>
+          <li><a href="#topics" data-ajax="false"> Topics </a></li>
+          <li><a href="#overview" data-ajax="false"> Overview </a></li>
+          <li><a href="#objectives" data-ajax="false"> Objectives </a></li>
+          <li><a href="#prereq" data-ajax="false"> Prerequisites </a></li>
+          <li><a href="#features" data-ajax="false"> Features of this Manual </a></li>
+          <li><a href="#seabee" data-ajax="false"> 1.0.0 SEABEE SKILL ASSESSMENT </a></li>
+          <li><a href="#training" data-ajax="false"> 2.0.0 TRAINING </a></li>
+          <li><a href="#con-admin" data-ajax="false"> 3.0.0 CONSTRUCTION ADMINISTRATION </a></li>
+          <li><a href="#safety" data-ajax="false"> 4.0.0 SAFETY PROGRAM </a></li>
+          <li><a href="#pollution" data-ajax="false"> 5.0.0 POLLUTION </a></li>	
+          <li><a href="#haz-mat" data-ajax="false"> 6.0.0 HAZARDOUS MATERIAL CONTROL </a></li>
+          <li><a href="#summary" data-ajax="false"> Summary </a></li>
+          <li><a href="#questions" data-ajax="false"> Review Questions </a></li>
+          <li><a href="#trade-terms" data-ajax="false"> Trade Terms Introduced in this Chapter </a></li>
+          <li><a href="#resources" data-ajax="false"> Additional Resources and References </a></li>
+          <li><a href="#uupdate" data-ajax="false"> CSFE Nonresident Training Course  -  User Update </a></li>
+        </ul>
+      </div><!--/Panel--> 
 
         <div data-role="header" data-position="fixed" data-tap-toggle="false" data-theme='b'>
-            <a href="scripts/index.html" data-ajax="false"><i class='fa fa-bars'></i></a>
-            <h1>Cards</h1>
+            <a href="#nav-panel" data-ajax="false" data-icon="bars" data-iconpos="notext">Menu</a>
+            <h1>Naval Construction Training Center</h1>
         </div>
         
         <div data-role="content">   
 
 			
 			<ul data-nativedroid-plugin='cards'>
-				<li data-cards-type='weather'>
-					<h1>Zurich</h1>
-					<h2>Switzerland</h2>
-					<ul class='detail'>
-						<li><i class='fa fa-sun-o sunny'></i>
-							<span>SUNNY</span>
-							<span><i class='fa fa-fire'></i> 3km/h</span>
-						</li>
-						<li>14&deg;</li>
-					</ul>
-					<ul class='week'>
-						<li>
-							<span>WED</span>
-							<i class='fa fa-cloud'></i>
-							<strong>24&deg;</strong>
-							<span>11&deg;</span>
-						</li>
-						<li>
-							<span>THU</span>
-							<i class='fa fa-cloud'></i>
-							<strong>20&deg;</strong>
-							<span>10&deg;</span>
-						</li>
-						<li>
-							<span>FRI</span>
-							<i class='fa fa-cloud'></i>
-							<strong>11&deg;</strong>
-							<span>3&deg;</span>
-						</li>
-						<li>
-							<span>SAT</span>
-							<i class='fa fa-cloud'></i>
-							<strong>4&deg;</strong>
-							<span>0&deg;</span>
-						</li>
-					</ul>
-				</li>
-
-				<li data-cards-type='publictransport'>
-					<h1>Charleston &amp; Huff</h1>
-					<h2>Bus station</h2>
-					<table>
-						<tr>
-							<td>40</td>
-							<td>40 SB Foothill College</td>
-							<td>02:40</td>
-						</tr>
-						<tr>
-							<td>120</td>
-							<td>120 NB Express Fremont Bart Station</td>
-							<td>02:46</td>
-						</tr>
-						<tr>
-							<td>40</td>
-							<td>40 NB La Avenida &amp; Shoreline</td>
-							<td>02:47</td>
-						</tr>
-						<tr>
-							<td>40</td>
-							<td>40 SB Foothill College</td>
-							<td>03:10</td>
-						</tr>
-						<tr>
-							<td>40</td>
-							<td>40 NB La Avenida &amp; Shoreline</td>
-							<td>03:14</td>
-						</tr>
-					</table>
-					<a href='#'><i class='fa fa-file-text-o'></i> All scheduled departures</a>
-				</li>
-				<li data-cards-type='traffic' data-cards-traffic-route='{"from":"42.350742,-71.083217","to":"42.353709,-71.053613","type" : "coords"}'>
-					<h1><strong>18 minutes</strong> to Home</h1>
-					<h2>Normal traffic on US-101 N</h2>
-					<div class='map'></div>
-					<a href='#'><i class='fa fa-map-marker'></i> Navigate</a>
-				</li>
-				<li data-cards-type='sports'>
-					<h1>Bayern M&uuml;nchen<span>4</span></h1>
-					<h1>Barcelona<span>0</span></h1>
-					<h2>Final, April 23</h2>
-				</li>
-
 				<li data-cards-type='text'>
-					<h1>Default Card</h1>
+					<h1>Command Information</h1>
 					<h2>Subtitle of a default card</h2>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nec sapien eu lorem condimentum mollis vel vel mauris. Proin dolor libero, ultricies quis semper eu, bibendum nec quam. Sed pellentesque, nunc vitae ornare tempus, turpis nisl aliquam nisl, vel faucibus neque magna eu odio. Fusce venenatis sem vitae arcu lacinia tincidunt. Quisque ornare sollicitudin mauris, adipiscing auctor magna commodo vel. Praesent ipsum diam, feugiat ut vulputate eget, congue id lorem. Mauris sollicitudin venenatis aliquam. Aliquam interdum orci a orci posuere fermentum. Vestibulum placerat tristique sem, eu pretium nisl feugiat in. Phasellus non mi mi. Proin porta metus in nulla fringilla non adipiscing risus ullamcorper.</p>
+                    <br /><!--Row 1-->
+					<ul>
+                    	<h3>Command</h3>
+                    	<li><a href="http://www.yahoo.com">Mission</a></li>
+                        <li>Command Philosophy</li>
+                        <li>Command Goals</li>
+                        <li>Duty Chaplin</li>
+                        <br />
+                    </ul>
+                    
+                    <ul>
+                    	<h3>Current Events</h3>
+                    	<li>Community Service</li>
+                        <li>Fundraisers</li>
+                        
+                    </ul>
+                    <br /><br /><!--Row 2-->
+                    <ul>
+                    	<h3>Important Information</h3>
+                    	<li>Need to know</li>
+                        <li>Quarterdeck Email</li>
+                        <li>Uniform Requirements</li>
+                        <li>Berthing Options</li>
+                        <li>Local Area Information</li>
+                        <li>Before you arrive</li>
+                        <li>Command Indoc</li>
+                    </ul>
+                    
 				</li>
 				
-				<li data-cards-type='text'>
-					<h1>TweetFeed</h1>
-					<h2>#jquery</h2>
-					<p>Twitter API v1 has gone. So try to use: <a href='https://dev.twitter.com/docs/embedded-timelines'>Embedded-timelines</a></p>
+				<li data-cards-type='text2'>
+					<h1>Staff</h1>
+					<h2>Subtitle of a default card</h2>
+                    <br /><!--Row 1-->
+					<ul>
+                    	<h3>Command Organization</h3>
+                    	<li>Staff Sections</li>
+                        <li>Company Sections</li>
+                        <br />
+                    </ul>
+                    
+                    <ul>
+                    	<h3>Training</h3>
+                    	<li>Annual</li>
+                        <li>Short Notice Requirements</li>
+                        <li>ESAMS</li>
+                        
+                    </ul>
+                    <br /><br /><!--Row 2-->
+                    <ul>
+                    	<h3>Staff in Focus</h3>
+                    	<!--<li>Need to know</li>
+                        <li>Quarterdeck Email</li>
+                        <li>Uniform Requirements</li>
+                        <li>Berthing Options</li>
+                        <li>Local Area Information</li>
+                        <li>Before you arrive</li>
+                        <li>Command Indoc</li>-->
+                    </ul>
+                    
 				</li>
 							
-				<li data-cards-type='text'>
-					<h1>Default Card</h1>
+				<li data-cards-type='text3'>
+					<h1>Students</h1>
 					<h2>Subtitle of a default card</h2>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nec sapien eu lorem condimentum mollis vel vel mauris. Proin dolor libero, ultricies quis semper eu, bibendum nec quam. Sed pellentesque, nunc vitae ornare tempus, turpis nisl aliquam nisl, vel faucibus neque magna eu odio. Fusce venenatis sem vitae arcu lacinia tincidunt. Quisque ornare sollicitudin mauris, adipiscing auctor magna commodo vel. Praesent ipsum diam, feugiat ut vulputate eget, congue id lorem. Mauris sollicitudin venenatis aliquam. Aliquam interdum orci a orci posuere fermentum. Vestibulum placerat tristique sem, eu pretium nisl feugiat in. Phasellus non mi mi. Proin porta metus in nulla fringilla non adipiscing risus ullamcorper.</p>
+					<br /><!--Row 1-->
+					<ul>
+                    	<h3>Advance Schools</h3>
+                    	<li>Need to know</li>
+                        <li>Reporting</li>
+                        <li>GMT Requirements</li>
+                        <br />
+                    </ul>
+                    
+                    <ul>
+                    	<h3>A Schools</h3>
+                    	<li>Msg from COC</li>
+                        <li>Student Handbook</li>
+                        <li>Coping Strategies</li>
+                        <li>Ask a Shipmate</li>
+                        <li>Study Material</li>
+                        <li>Uniform Regs</li>
+                        <li>More Links</li>                        
+                    </ul>
+                    <br /><br /><!--Row 2-->
+                    <ul>
+                    	<h3>Liberty Events</h3>
+                    	<li>MWR/Single Sailor Programs</li>
+                        <li>MWR Family Programs</li>
+                        <li>Movie Theater Schedule</li>
+                       <!-- <li>Berthing Options</li>
+                        <li>Local Area Information</li>
+                        <li>Before you arrive</li>
+                        <li>Command Indoc</li>-->
+                    </ul>
+                    
+                    
 				</li>
-				<li data-cards-type='text'>
-					<h1>Default Card</h1>
+				<li data-cards-type='text4'>
+					<h1>21st Century Sailor</h1>
 					<h2>Subtitle of a default card</h2>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nec sapien eu lorem condimentum mollis vel vel mauris. Proin dolor libero, ultricies quis semper eu, bibendum nec quam. Sed pellentesque, nunc vitae ornare tempus, turpis nisl aliquam nisl, vel faucibus neque magna eu odio. Fusce venenatis sem vitae arcu lacinia tincidunt. Quisque ornare sollicitudin mauris, adipiscing auctor magna commodo vel. Praesent ipsum diam, feugiat ut vulputate eget, congue id lorem. Mauris sollicitudin venenatis aliquam. Aliquam interdum orci a orci posuere fermentum. Vestibulum placerat tristique sem, eu pretium nisl feugiat in. Phasellus non mi mi. Proin porta metus in nulla fringilla non adipiscing risus ullamcorper.</p>
+					<br /><!--Row 1-->
+					<ul>
+                    	<h3>Instructions & POC's</h3>
+                    	<li>Bystander Intervention</li>
+                        <li>CSADD</li>
+                        <li>EEO</li>
+                        <li>NADAP</li>
+                        <li>GMT Requirements</li>
+                        <li>Suicide Prevention</li>
+                        <li>Ombudsman</li>
+                        <br />
+                    </ul>
+                    
+                    <ul>
+                    	<h3>CSADD</h3>
+                    	<li>Goals</li>
+                        <li>Leads</li>
+                        <li>Events</li>
+                        <!--<li>How to become a member</li>-->
+                                                
+                    </ul>
+                    <br /><br /><!--Row 2-->
+                    <ul>
+                    	<h3>Other</h3>
+                    	<li>Sailors Creed</li>
+                        <li>Seabee Song</li>
+                      <!--  <li>Movie Theater Schedule</li>
+                        <li>Berthing Options</li>
+                        <li>Local Area Information</li>
+                        <li>Before you arrive</li>
+                        <li>Command Indoc</li>-->
+                    </ul>
+                    
+                    
+                    
 				</li>
 			</ul>
 
@@ -156,5 +211,6 @@
     </div>
     
     <script src="scripts/js/nativedroid.script.js"></script>
+    
     </body>
 </html>
