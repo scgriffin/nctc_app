@@ -41,7 +41,7 @@ textarea.ui-page-theme-b.ui-input-text:focus {
 	background-color: #FF4444;
 }
 .ui-page-theme-b .ui-link,.ui-page-theme-b .ui-li a,.nativeDroidCards ul[data-nativedroid-plugin="twitter"] a {
-	color: #FF4444;
+	color: #FF4444;/*font color for hyperlink*/
 }
 
 .ui-page-theme-b .table-stroke tr:nth-child(even) .ui-link {

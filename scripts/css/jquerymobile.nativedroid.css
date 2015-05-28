@@ -75,6 +75,11 @@ width: 91px;
 	padding: 0px;
 }
 
+.ui-panel {
+    width: 400px !important;
+	opacity: 0.9;
+	
+}
 .ui-content .ui-listview-inset, .ui-panel-inner .ui-listview-inset,.ui-content .ui-listview, .ui-panel-inner .ui-listview {
 	margin: 0;
 }
@@ -118,6 +123,8 @@ width: 91px;
 	padding: 7px 0px 0px 0px;
 	font-size: 25px;
 	font-weight: 100;*/
+	text-overflow:clip; /*wraps text header and title*/
+	white-space:normal;
 }
 
 .ui-mobile label, div.ui-controlgroup-label,
@@ -985,7 +992,7 @@ progress  {
 
 .nativeDroidCards a {
 	display: block;
-	padding: 7px 0px 7px 0px;
+/*	padding: 7px 0px 7px 0px;*/
 	font-size: 18px;
 }
 
@@ -996,7 +1003,7 @@ ul {
   }
  
 .nativeDroidCards > [data-cards-type="text"] {
-	background-color: #1384ED;
+	background-color: #474747;
 }
 
 .nativeDroidCards > [data-cards-type="text2"] {
