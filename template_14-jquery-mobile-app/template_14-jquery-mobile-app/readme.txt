@@ -1,2 +1,0 @@
-Read Me text for template_14-jquery-mobile-app.zip
-This file contains code for use with the article, Creating an advanced design template for jQuery Mobile, by Chris Converse. Read the article on Adobe Developer Connection at www.adobe.com/devnet/ to learn more about how to use this fully functioning template and query mobile website. The Photoshop PSD files included will help you customize the design, and the html/css/javascript allows you to see a fully functioning site.
