@@ -1,0 +1,484 @@
+<!doctype html>
+<html>
+<head>
+<title>21st Century Sailor</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+<link rel="stylesheet" type="text/css" href="../css/panel.css">
+<link rel="stylesheet" type="text/css" href="../scripts/nctctheme03/themes/nctctheme03.css">
+<link rel="stylesheet" type="text/css" href="../scripts/nctctheme03/themes/jquery.mobile.icons.min.css">
+<!--<link rel="stylesheet" type="text/css" href="css/classic.css">-->
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function() 
+	{
+		$('a.anchor-link').click(function(e) 
+	{  
+      // Extract the hash in the target.         
+	  // No hash means that the target is not an <a> tag but one of its children (i.e. an <h3>)       
+	   hash =  $(e.target).get(0).hash;        
+if (!hash) {
+		  hash = $(e.target).parents('a').get(0).hash;  
+	  }       
+	  // Find the page it is contained into (or it is itself)      
+	    page = $(hash).closest('div[data-role="page"]').get(0);         
+	    // Look if we are already in that page      
+	if ($(page).get(0) != $.mobile.activePage.get(0)) {    
+		       // Change to it and scroll to the anchor           
+		   $.mobile.changePage($(page));           
+	    $(page).on('pageshow', function(){             
+	  $.mobile.silentScroll($(hash).offset().top);        
+	});     
+	    } else {      
+	      // Just scroll to the anchor      
+	     $.mobile.silentScroll($(hash).offset().top);   
+	  } 
+   });
+});
+
+</script>
+
+</head>
+
+<body>
+
+<!--Indoc POC-->
+<div data-role="page" id="indoc-poc" data-url="indoc-poc" data-theme="a">
+
+  <div data-role="header" data-position="fixed" data-tap-toggle="false">
+    <h1>Naval Construction<br /> Training Center</h1>
+        <a href="#left-panel-indoc-poc" data-icon="bars" data-iconpos="notext" 
+        data-shadow="false" data-iconshadow="false">Menu</a>
+        <a href="#right-panel-indoc-poc" data-icon="bars" data-iconpos="notext" 
+        data-shadow="false" data-iconshadow="false">Disclosures</a>
+        
+  </div>
+  <br />
+  <br />
+  <div data-role="content">
+		<!--<div align="center"><h3>POC's</h3></div>-->    
+  
+   <table Cellpadding="2" Cellspacing="0" align="Center" bgcolor="#F2F2F2">
+      <tr>
+      <td colspan="2" align="center" class="Pagesubhdr" bgcolor="#CFCFCF"><b>NCTC Instructions and POC's:</b></td>
+      </tr>
+      <tr align="left">
+      <td width="60%" class="Pagetxt" bgcolor="#FFFFFF">Bystander Intervention </td>
+      <!--<td width="40%" class="Pagetxt" bgcolor="#FFFFFF">COMM (228) 871-2531</td>-->
+      </tr>
+      <tr align="left">
+      <td>CSADD</td>
+      <!--<td>COMM (228) 871-2531</td>-->
+      </tr>
+      <tr align="left">
+      <td bgcolor="#FFFFFF">EEO</td>
+      <!--<td bgcolor="#FFFFFF">COMM (228) 871- 2761</td>-->
+      </tr>
+      <tr align="left">
+      <td>NADAP</td>
+      <!--<td>COMM (228) 871- 2531</td>-->
+      </tr>
+      <tr align="left">
+      <td bgcolor="#FFFFFF">Fitness and Nutrition</td>
+      <!--<td bgcolor="#FFFFFF">COMM (228) 871-2280</td>-->
+      </tr>
+      <tr align="left">
+      <td>Operational Stress Control</td>
+      <!--<td>COMM (228) 871-3365</td>-->
+      </tr>
+      <tr align="left">
+      <td bgcolor="#FFFFFF">Ombudsman</td>
+     <!-- <td bgcolor="#FFFFFF">COMM (228) 871-2611</td>-->
+      </tr>
+      <tr align="left">
+      <td>SAPR</td>
+      <!--<td>COMM (228) 871- 2740</td>-->
+      </tr>
+      <tr align="left">
+      <td bgcolor="#FFFFFF">Suicide Prevention</td>
+      <!--<td bgcolor="#FFFFFF">COMM (228) 871- 4567</td>-->
+      </tr>
+      <tr align="left">
+      <td>Transition Assistance</td>
+      <!--<td>COMM (228) 871-2609</td>-->
+      </tr>
+    </table>
+   </div>
+  
+  <!--Left Panel Pages-->
+  <div data-role="panel" id="left-panel-indoc-poc" data-display="overlay">
+        
+        <ul data-role="listview">        
+            <!--<li data-icon="delete"><a href="#" data-rel="close">Close</a></li>-->
+            <li><a href="../index.html" rel="external">Home</a></li>
+                        
+            <li data-role="collapsible" data-inset="false" data-iconpos="right" data-content-theme="b">
+              <h3>Command</h3>
+              <ul data-role="listview">
+                <li><a href="command.html#cmd-mission" rel="external">Mission</a></li>
+                <li><a href="command.html#current-events" rel="external">Current Events</a></li>
+                <li><a href="command.html#n2n" rel="external">Important Information</a></li>
+              </ul>
+            </li><!-- /collapsible -->
+           <li data-role="collapsible" data-inset="false" data-iconpos="right" data-content-theme="b">
+              <h3>Staff</h3>
+              <ul data-role="listview">
+                <li><a href="staff.html#cmd-org" rel="external">Command Org</a></li>
+                <li><a href="staff.html#training" rel="external">Training</a></li>
+                <li><a href="staff.html#staff-focus" rel="external">Staff in Focus</a></li>
+              </ul>
+            </li><!-- /collapsible -->
+            <li data-role="collapsible" data-inset="false" data-iconpos="right" data-content-theme="b">
+              <h3>Students</h3>
+              <ul data-role="listview">
+                <li><a href="students.html#adv-school" rel="external">Advanced Schools</a></li>
+                <li><a href="students.html#a-school" rel="external">"A" Schools</a></li>
+                <li><a href="students.html#liberty" rel="external">Liberty Events</a></li>
+              </ul>
+            </li>
+            <!-- /collapsible --> 
+            <li data-role="collapsible" data-inset="false" data-iconpos="right" data-content-theme="b">
+              <h3>21st Century Sailor</h3>
+              <ul data-role="listview">
+                <li><a href="#indoc-poc">Indoc/POC</a></li>
+                <li><a href="#csadd">CSADD</a></li>
+                <li><a href="#other">Other</a></li>
+              </ul>
+            </li>
+            <!-- /collapsible -->
+        </ul>
+        
+    </div><!-- /panel -->
+    
+    <!--Right Panel-->
+    <div data-role="panel" id="right-panel-indoc-poc" data-display="overlay" data-position="right">
+        <ul data-role="listview" data-icon="false">
+            <!--<li data-icon="delete"><a href="#" data-rel="close">Close</a></li>-->
+            <!--<li data-role="list-divider">Share this page</li>-->
+            <li><a href="http://www.netc.navy.mil/Default.aspx">NETC</a></li>
+            <li><a href="http://www.netc.navy.mil/centers/csfe/">CSFE</a></li>
+            <li><a href="policy.html#policy" rel="external">Privacy Policy</a></li>
+            <li><a href="#">CSFE PAO</a></li>            
+        
+        <li data-role="collapsible" data-inset="false" data-iconpos="left">
+        <h3>Social Media</h3>
+        	<p>
+            <a href="http://www.facebook.com/nctcgp" target="_blank">
+            <img src="http://cache.addthis.com/icons/v1/thumbs/32x32/facebook.png" alt="Gulfport" /></a> Gulfport
+            </p>
+            <br />
+            <p>
+            <a href="http://www.facebook.com/nctcopfit" target="_blank">
+            <img src="http://cache.addthis.com/icons/v1/thumbs/32x32/facebook.png" alt="Command Fitness Program" /></a> Cmd Fitness Prog.
+            </p>
+            
+        </li>
+        
+        </ul>
+        <br /><br />
+        <div align="center">
+        <img src="https://c2.staticflickr.com/6/5106/5579860783_a17e6b4b07.jpg" />
+        
+        </div>
+    </div><!-- /panel -->
+  
+  <div data-role="footer" data-position="fixed" data-tap-toggle="false">
+ 
+    <div align="center">
+        	<a href="http://www.navy.com" rel="external" target="_blank"><img src="http://www.netc.navy.mil/images/ico_navyj.gif" /></a>
+            <a href="http://www.navy.mil" rel="external" target="_blank"><img src="http://www.netc.navy.mil/images/ico_usnavy.gif" /></a>
+            <a href="http://www.public.navy.mil/donhr/pages/nofear.aspx" rel="external" target="_blank">
+            <img src="http://www.netc.navy.mil/images/nofearlogo.gif" /></a>
+            <a href="https://www.foia.navy.mil/" rel="external" target="_blank"><img src="http://www.netc.navy.mil/images/navyfoia.gif" /></a>
+            <a href="http://www.safetycenter.navy.mil/" rel="external" target="_blank">
+            <img src="http://www.netc.navy.mil/images/naval_safety_center.jpg" /></a>
+        </div>
+  </div>
+</div>
+
+<!--End Indoc POC-->
+
+<!--CSADD-->
+<div data-role="page" id="csadd" data-url="csadd" data-theme="a">
+
+  <div data-role="header" data-position="fixed" data-tap-toggle="false">
+    <h1>Naval Construction<br /> Training Center</h1>
+        <a href="#left-panel-csadd" data-icon="bars" data-iconpos="notext" 
+        data-shadow="false" data-iconshadow="false">Menu</a>
+        <a href="#right-panel-csadd" data-icon="bars" data-iconpos="notext" 
+        data-shadow="false" data-iconshadow="false">Disclosures</a>
+        
+  </div>
+   
+  <div data-role="content">
+		<div align="center">
+        	<h3>CSADD</h3>
+    	</div>   
+  <p id='storybody' class='storybody'>The underlying principle of CSADD is simple; People are more likely to listen to advice from their friend, than their boss.  <br>
+<br>
+CSADD chapters put junior Sailors in a position to stop their shipmates from making decisions that will have negative impacts on their life and their Navy career. The program is geared toward Sailors E5 and below, between ages 18 to 25.<br>
+<br>
+CSADD Sailors promote positive choices and develop leadership through organizing local social networks, facilitating discussion, producing visual messages, promoting community involvement and hosting recreational events. <br>
+<br>
+The official <a href='http://www.facebook.com/pages/coalition-of-sailors-against-destructive-decisions-csadd/299642495316' target="_blank">CSADD Facebook page</a> is a forum for Sailor dialog and share information about new initiatives in the program and the achievements of CSADD chapters around the world. Fleet Master Chief for Manpower, Personnel Training and Education (N1) April Beldo monitors this page and responds to Sailors questions as part of the CSADD board of advisors. <br>
+<br>
+CSADD is 100 percent voluntary. Chapters are founded only when there is interest for CSADD at the junior level.<br>
+<br>
+CSADD began as a grass-roots level social group at Commander, Navy Region Mid-Atlantic. The idea spread quickly to other commands, due to its popularity among Sailors, and it quickly became a Navy-wide program.   <br>
+<br>
+CSADD Sailors reinforce both the core principles of the Navy and the 21st Century Sailor and Marine initiative. The 21st Century Sailor and Marine initiative consolidates a set of objectives and policies, new and existing, to maximize Sailor and Marine personal readiness, build resiliency and hone the most combat-effective force in the history of the Navy and Marine Corps.<br>
+<br>
+Sailors E6 and above contribute to their command's CSADD chapters as sponsors and supporters.  <br>
+<br>
+<strong>Mission Statement</strong><br>
+<br>
+Create a culture in which our Shipmates are helping Shipmates maintain a course of success through good decision making.<br>
+<br>
+<strong>Vision</strong><br>
+<br>
+Grow CSADD chapters in every command, as well as NROTC and JROTC units, to reinforce the mission of shipmates helping shipmates while enabling our Sailors to realize that America's Navy is a global force for good and, through empowering each Sailor to take a leadership role, that the force for good starts for each U.S. Navy Sailor.<br>
+<br>
+<strong>2014 Key Monthly Focus Areas</strong><br>
+<br>
+January - Fleet and Family Support Centers and Planning a Family<br>
+February - Responsible Use of Alcohol<br>
+March - Navy Nutrition<br>
+April - Sexual Assault Prevention and Awareness <br>
+May - Physical Fitness<br>
+June - Motorcycle Safety<br>
+July - Off-Duty Recreation<br>
+August - CSADD Volunteer Outreach<br>
+September - Suicide Awareness ACT (Ask, Care, Treat)<br>
+October - Domestic Violence Prevent and Awareness and Drug Abuse Prevention and Awareness <br>
+November - Sailor Resiliency, Physical Health and Deployment Readiness<br>
+December - Safe Driving Planning<br>
+<br>
+<strong>The CSADD Creed</strong> (Created by CSADD Great Lakes)<br>
+<br>
+We are the Coalition of Sailors Against Destructive Decisions.<br>
+We are Sailors helping Sailors.<br>
+We are dedicated to making good decisions on and off duty.<br>
+We are responsible for our own actions and the wellbeing of our fellow shipmates.<br>
+We establish the standard representing a good Sailor.<br>
+We will respect ourselves and others at all times.<br>
+HOOYAH!</p>
+
+  
+</div>
+  
+  
+  <div data-role="panel" id="left-panel-csadd" data-display="overlay">
+        
+        <ul data-role="listview">        
+            <!--<li data-icon="delete"><a href="#" data-rel="close">Close</a></li>-->
+            <li><a href="../index.html" rel="external">Home</a></li>
+                        
+            <li data-role="collapsible" data-inset="false" data-iconpos="right" data-content-theme="b">
+              <h3>Command</h3>
+              <ul data-role="listview">
+                <li><a href="command.html#cmd-mission" rel="external">Mission</a></li>
+                <li><a href="command.html#current-events" rel="external">Current Events</a></li>
+                <li><a href="command.html#n2n" rel="external">Important Information</a></li>
+              </ul>
+            </li><!-- /collapsible -->
+           <li data-role="collapsible" data-inset="false" data-iconpos="right" data-content-theme="b">
+              <h3>Staff</h3>
+              <ul data-role="listview">
+                <li><a href="staff.html#cmd-org" rel="external">Command Org</a></li>
+                <li><a href="staff.html#training" rel="external">Training</a></li>
+                <li><a href="staff.html#staff-focus" rel="external">Staff in Focus</a></li>
+              </ul>
+            </li><!-- /collapsible -->
+            <li data-role="collapsible" data-inset="false" data-iconpos="right" data-content-theme="b">
+              <h3>Students</h3>
+              <ul data-role="listview">
+                <li><a href="students.html#adv-school" rel="external">Advanced Schools</a></li>
+                <li><a href="students.html#a-school" rel="external">"A" Schools</a></li>
+                <li><a href="students.html#liberty" rel="external">Liberty Events</a></li>
+              </ul>
+            </li>
+            <!-- /collapsible --> 
+            <li data-role="collapsible" data-inset="false" data-iconpos="right" data-content-theme="b">
+              <h3>21st Century Sailor</h3>
+              <ul data-role="listview">
+                <li><a href="#indoc-poc">Indoc/POC</a></li>
+                <li><a href="#csadd">CSADD</a></li>
+                <li><a href="#other">Other</a></li>
+              </ul>
+            </li>
+            <!-- /collapsible -->
+        </ul>
+        
+    </div><!-- /panel -->
+    
+    
+    <div data-role="panel" id="right-panel-csadd" data-display="overlay" data-position="right">
+        <ul data-role="listview" data-icon="false">
+            <!--<li data-icon="delete"><a href="#" data-rel="close">Close</a></li>-->
+            <!--<li data-role="list-divider">Share this page</li>-->
+            <li><a href="http://www.netc.navy.mil/Default.aspx">NETC</a></li>
+            <li><a href="http://www.netc.navy.mil/centers/csfe/">CSFE</a></li>
+            <li><a href="policy.html#policy" rel="external">Privacy Policy</a></li>
+            <li><a href="#">CSFE PAO</a></li>            
+        
+        <li data-role="collapsible" data-inset="false" data-iconpos="left">
+        <h3>Social Media</h3>
+        	<p>
+            <a href="http://www.facebook.com/nctcgp" target="_blank">
+            <img src="http://cache.addthis.com/icons/v1/thumbs/32x32/facebook.png" alt="Gulfport" /></a> Gulfport
+            </p>
+            <br />
+            <p>
+            <a href="http://www.facebook.com/nctcopfit" target="_blank">
+            <img src="http://cache.addthis.com/icons/v1/thumbs/32x32/facebook.png" alt="Command Fitness Program" /></a> Cmd Fitness Prog.
+            </p>
+            
+        </li>
+        
+        </ul>
+        <br /><br />
+        <div align="center">
+        <img src="https://c2.staticflickr.com/6/5106/5579860783_a17e6b4b07.jpg" />
+        
+        </div>
+        
+    </div><!-- /panel -->
+  
+  	
+  
+  <div data-role="footer" data-position="fixed" data-tap-toggle="false">
+  	
+ 
+    <div align="center">
+        	<a href="http://www.navy.com" rel="external" target="_blank"><img src="http://www.netc.navy.mil/images/ico_navyj.gif" /></a>
+            <a href="http://www.navy.mil" rel="external" target="_blank"><img src="http://www.netc.navy.mil/images/ico_usnavy.gif" /></a>
+            <a href="http://www.public.navy.mil/donhr/pages/nofear.aspx" rel="external" target="_blank">
+            <img src="http://www.netc.navy.mil/images/nofearlogo.gif" /></a>
+            <a href="https://www.foia.navy.mil/" rel="external" target="_blank"><img src="http://www.netc.navy.mil/images/navyfoia.gif" /></a>
+            <a href="http://www.safetycenter.navy.mil/" rel="external" target="_blank">
+            <img src="http://www.netc.navy.mil/images/naval_safety_center.jpg" /></a>
+        </div>
+  </div>
+</div>
+
+
+<!--End CSADD-->
+
+<div data-role="page" id="other" data-url="other" data-theme="a">
+
+ <div data-role="header" data-position="fixed" data-tap-toggle="false">
+    <h1>Naval Construction<br /> Training Center</h1>
+        <a href="#left-panel-other" data-icon="bars" data-iconpos="notext" 
+        data-shadow="false" data-iconshadow="false">Menu</a>
+        <a href="#right-panel-other" data-icon="bars" data-iconpos="notext" 
+        data-shadow="false" data-iconshadow="false">Disclosures</a>
+        
+  </div>
+  
+  <div data-role="content">
+  <div align="center">The Sailor's Creed</div>
+  <p>
+I am a United States Sailor. <br />
+I will support and defend the Constitution of the United States of America and I will obey the orders of those appointed over me. <br />
+I represent the fighting spirit of the Navy and those who have gone before me to defend freedom and democracy around the world. <br />
+I proudly serve my country's Navy combat team with Honor, Courage and Commitment. <br />
+I am committed to excellence and the fair treatment of all.  
+  
+  </p>  
+</div>
+
+  <div data-role="panel" id="left-panel-other" data-display="overlay">
+        
+        <ul data-role="listview">        
+            <!--<li data-icon="delete"><a href="#" data-rel="close">Close</a></li>-->
+            <li><a href="../index.html" rel="external">Home</a></li>
+                        
+            <li data-role="collapsible" data-inset="false" data-iconpos="right" data-content-theme="b">
+              <h3>Command</h3>
+              <ul data-role="listview">
+                <li><a href="command.html#cmd-mission" rel="external">Mission</a></li>
+                <li><a href="command.html#current-events" rel="external">Current Events</a></li>
+                <li><a href="command.html#n2n" rel="external">Important Information</a></li>
+              </ul>
+            </li><!-- /collapsible -->
+           <li data-role="collapsible" data-inset="false" data-iconpos="right" data-content-theme="b">
+              <h3>Staff</h3>
+              <ul data-role="listview">
+                <li><a href="staff.html#cmd-org" rel="external">Command Org</a></li>
+                <li><a href="staff.html#training" rel="external">Training</a></li>
+                <li><a href="staff.html#staff-focus" rel="external">Staff in Focus</a></li>
+              </ul>
+            </li><!-- /collapsible -->
+            <li data-role="collapsible" data-inset="false" data-iconpos="right" data-content-theme="b">
+              <h3>Students</h3>
+              <ul data-role="listview">
+                <li><a href="students.html#adv-school" rel="external">Advanced Schools</a></li>
+                <li><a href="students.html#a-school" rel="external">"A" Schools</a></li>
+                <li><a href="students.html#liberty" rel="external">Liberty Events</a></li>
+              </ul>
+            </li>
+            <!-- /collapsible --> 
+            <li data-role="collapsible" data-inset="false" data-iconpos="right" data-content-theme="b">
+              <h3>21st Century Sailor</h3>
+              <ul data-role="listview">
+                <li><a href="#indoc-poc">Indoc/POC</a></li>
+                <li><a href="#csadd">CSADD</a></li>
+                <li><a href="#other">Other</a></li>
+              </ul>
+            </li>
+            <!-- /collapsible -->
+        </ul>
+        
+    </div><!-- /panel -->
+    
+    
+    <div data-role="panel" id="right-panel-other" data-display="overlay" data-position="right">
+        <ul data-role="listview" data-icon="false">
+            <!--<li data-icon="delete"><a href="#" data-rel="close">Close</a></li>-->
+            <!--<li data-role="list-divider">Share this page</li>-->
+            <li><a href="http://www.netc.navy.mil/Default.aspx">NETC</a></li>
+            <li><a href="http://www.netc.navy.mil/centers/csfe/">CSFE</a></li>
+            <li><a href="policy.html#policy" rel="external">Privacy Policy</a></li>
+            <li><a href="#">CSFE PAO</a></li>            
+        
+        <li data-role="collapsible" data-inset="false" data-iconpos="left">
+        <h3>Social Media</h3>
+        	<p>
+            <a href="http://www.facebook.com/nctcgp" target="_blank">
+            <img src="http://cache.addthis.com/icons/v1/thumbs/32x32/facebook.png" alt="Gulfport" /></a> Gulfport
+            </p>
+            <br />
+            <p>
+            <a href="http://www.facebook.com/nctcopfit" target="_blank">
+            <img src="http://cache.addthis.com/icons/v1/thumbs/32x32/facebook.png" alt="Command Fitness Program" /></a> Cmd Fitness Prog.
+            </p>
+            
+        </li>
+        
+        </ul>
+        <br /><br />
+        <div align="center">
+        <img src="https://c2.staticflickr.com/6/5106/5579860783_a17e6b4b07.jpg" />
+        
+        </div>
+        
+    </div><!-- /panel -->  	
+  
+  <div data-role="footer" data-position="fixed" data-tap-toggle="false">
+      <div align="center">
+        	<a href="http://www.navy.com" rel="external" target="_blank"><img src="http://www.netc.navy.mil/images/ico_navyj.gif" /></a>
+            <a href="http://www.navy.mil" rel="external" target="_blank"><img src="http://www.netc.navy.mil/images/ico_usnavy.gif" /></a>
+            <a href="http://www.public.navy.mil/donhr/pages/nofear.aspx" rel="external" target="_blank">
+            <img src="http://www.netc.navy.mil/images/nofearlogo.gif" /></a>
+            <a href="https://www.foia.navy.mil/" rel="external" target="_blank"><img src="http://www.netc.navy.mil/images/navyfoia.gif" /></a>
+            <a href="http://www.safetycenter.navy.mil/" rel="external" target="_blank">
+            <img src="http://www.netc.navy.mil/images/naval_safety_center.jpg" /></a>
+        </div>
+  </div>
+</div>
+
+</body>
+</html>

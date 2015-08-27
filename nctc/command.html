@@ -1,0 +1,549 @@
+<!doctype html>
+<html>
+<head>
+<title>NCTC</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+<link rel="stylesheet" type="text/css" href="../css/panel.css">
+<link rel="stylesheet" type="text/css" href="../scripts/nctctheme03/themes/nctctheme03.css">
+<link rel="stylesheet" type="text/css" href="../scripts/nctctheme03/themes/jquery.mobile.icons.min.css">
+<!--<link rel="stylesheet" type="text/css" href="css/classic.css">-->
+
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function() 
+	{
+		$('a.anchor-link').click(function(e) 
+	{  
+      // Extract the hash in the target.         
+	  // No hash means that the target is not an <a> tag but one of its children (i.e. an <h3>)       
+	   hash =  $(e.target).get(0).hash;        
+if (!hash) {
+		  hash = $(e.target).parents('a').get(0).hash;  
+	  }       
+	  // Find the page it is contained into (or it is itself)      
+	    page = $(hash).closest('div[data-role="page"]').get(0);         
+	    // Look if we are already in that page      
+	if ($(page).get(0) != $.mobile.activePage.get(0)) {    
+		       // Change to it and scroll to the anchor           
+		   $.mobile.changePage($(page));           
+	    $(page).on('pageshow', function(){             
+	  $.mobile.silentScroll($(hash).offset().top);        
+	});     
+	    } else {      
+	      // Just scroll to the anchor      
+	     $.mobile.silentScroll($(hash).offset().top);   
+	  } 
+   });
+});
+
+</script>
+
+</head>
+
+<body>
+
+<!--Left Panel Pages-->
+<!--Command Mission-->
+
+<div data-role="page" id="cmd-mission" data-url="cmd-mission" data-theme="a">
+    
+    <div data-role="header" data-position="fixed" data-tap-toggle="false">
+    	<h1>Naval Construction <br />Training Center</h1>
+            <a href="#left-panel-cmd" data-icon="bars" data-iconpos="notext" data-shadow="false" data-iconshadow="false">Menu</a>
+            <a href="#right-panel-cmd" data-icon="bars" data-iconpos="notext" data-shadow="false" data-iconshadow="false">Disclosures</a>
+            <div data-role="navbar" data-grid="b">
+            	<ul>
+                	<li><a href="#cmd-phil">Command Philosophy</a></li>
+                    <li><a href="#">Command Goals</a></li>
+                    <li><a href="#">Duty Chaplain</a></li>
+                </ul>
+            </div>
+    </div>
+
+	<div role="main" class="ui-content">
+    
+    	<div align="center">
+        	<h3>Our Mission</h3>
+    	</div>
+    <br />
+    <div>
+    	<ul>
+        	<li>Host ITRO "A" School team in Gulfport</li>
+            <li>Train and develop Sailors, Soldiers, and Airmen (BU & SW)</li>
+            <li>Train Seabees - C, G & F Schools, CBR</li>
+            <li>Train Mobilizing Unit - Tech. Training, CBR</li>
+            <li>Training Support
+            	<li>Expeditionary Combat Skills</li>
+                <li>Sheppard AFB</li>
+                <li>Fort Leonard Wood</li>
+            </li>
+          
+    	</ul>
+    </div>	
+    
+    <div align="center">
+    <img src="images/mission.png" width="327" height="275" alt=""/>
+    </div>    
+    
+    </div>
+    
+        <div data-role="panel" id="left-panel-cmd" data-display="overlay">
+        
+       <ul data-role="listview">
+        
+            <!--<li data-icon="delete"><a href="#" data-rel="close">Close</a></li>-->
+            <li><a href="../index.html" rel="external">Home</a></li>                        
+            <li data-role="collapsible" data-inset="false" data-iconpos="right" data-content-theme="b">
+              <h3>Command</h3>
+              <ul data-role="listview">
+                <li><a href="#cmd-mission">Mission</a></li>
+                <li><a href="#current-events">Current Events</a></li>
+                <li><a href="#n2n">Important Information</a></li>
+              </ul>
+            </li><!-- /collapsible -->
+            <li data-role="collapsible" data-inset="false" data-iconpos="right" data-content-theme="b">
+              <h3>Staff</h3>
+              <ul data-role="listview">
+                <li><a href="staff.html#cmd-org" rel="external">Command Org</a></li>
+                <li><a href="staff.html#training" rel="external">Training</a></li>
+                <li><a href="staff.html#staff-focus" rel="external">Staff in Focus</a></li>
+              </ul>
+            </li><!-- /collapsible -->
+            <li data-role="collapsible" data-inset="false" data-iconpos="right" data-content-theme="b">
+              <h3>Students</h3>
+              <ul data-role="listview">
+                <li><a href="students.html#adv-school" rel="external">Advanced Schools</a></li>
+                <li><a href="students.html#a-school" rel="external">"A" Schools</a></li>
+                <li><a href="students.html#liberty" rel="external">Liberty Events</a></li>
+              </ul>
+            </li>
+           <!--</div>--> <!-- /collapsible --> 
+            <li data-role="collapsible" data-inset="false" data-iconpos="right" data-content-theme="b">
+              <h3>21st Century Sailor</h3>
+              <ul data-role="listview">
+                <li><a href="twentyfirst.html#indoc-poc" rel="external">Indoc/POC</a></li>
+                <li><a href="twentyfirst.html#csadd" rel="external">CSADD</a></li>
+                <li><a href="twentyfirst.html#other" rel="external">Other</a></li>
+              </ul>
+            </li>
+            <!-- /collapsible -->
+        </ul>
+        
+    </div><!-- /panel -->
+    
+   
+    <div data-role="panel" id="right-panel-cmd" data-display="overlay" data-position="right">
+        <ul data-role="listview" data-icon="false">
+            <!--<li data-icon="delete"><a href="#" data-rel="close">Close</a></li>-->
+            <!--<li data-role="list-divider">Share this page</li>-->
+            <li><a href="http://www.netc.navy.mil/Default.aspx">NETC</a></li>
+            <li><a href="http://www.netc.navy.mil/centers/csfe/">CSFE</a></li>
+            <li><a href="policy.html#policy" rel="external">Privacy Policy</a></li>
+            <li><a href="#">CSFE PAO</a></li>            
+        
+        <li data-role="collapsible" data-inset="false" data-iconpos="left">
+        <h3>Social Media</h3>
+        	<p>
+            <a href="http://www.facebook.com/nctcgp" target="_blank">
+            <img src="http://cache.addthis.com/icons/v1/thumbs/32x32/facebook.png" alt="Gulfport" /></a> Gulfport
+            </p>
+            <br />
+            <p>
+            <a href="http://www.facebook.com/nctcopfit" target="_blank">
+            <img src="http://cache.addthis.com/icons/v1/thumbs/32x32/facebook.png" alt="Command Fitness Program" /></a> Cmd Fitness Prog.
+            </p>
+            
+        </li>
+        
+        </ul>
+        <br /><br />
+        <div align="center">
+        <img src="https://c2.staticflickr.com/6/5106/5579860783_a17e6b4b07.jpg" />
+        
+        </div>
+    </div><!-- /panel -->
+
+	<div data-role="footer" data-position="fixed" data-tap-toggle="false">
+    
+    	<div align="center">
+        	<a href="http://www.navy.com" rel="external" target="_blank"><img src="http://www.netc.navy.mil/images/ico_navyj.gif" /></a>
+            <a href="http://www.navy.mil" rel="external" target="_blank"><img src="http://www.netc.navy.mil/images/ico_usnavy.gif" /></a>
+            <a href="http://www.public.navy.mil/donhr/pages/nofear.aspx" rel="external" target="_blank">
+            <img src="http://www.netc.navy.mil/images/nofearlogo.gif" /></a>
+            <a href="https://www.foia.navy.mil/" rel="external" target="_blank"><img src="http://www.netc.navy.mil/images/navyfoia.gif" /></a>
+            <a href="http://www.safetycenter.navy.mil/" rel="external" target="_blank">
+            <img src="http://www.netc.navy.mil/images/naval_safety_center.jpg" /></a>
+        </div>
+        
+    </div>
+
+</div>
+<!--End Mission-->
+
+<!--Current Events-->
+
+<div data-role="page" id="current-events" data-url="current-events" data-theme="a">
+    
+    <div data-role="header" data-position="fixed" data-tap-toggle="false">
+    	<h1>Naval Construction <br />Training Center</h1>
+            <a href="#left-panel-ce" data-icon="bars" data-iconpos="notext" data-shadow="false" data-iconshadow="false">Menu</a>
+            <a href="#right-panel-ce" data-icon="bars" data-iconpos="notext" data-shadow="false" data-iconshadow="false">Disclosures</a>
+            <div data-role="navbar" data-grid="a">
+            	<ul>
+                	<li><a href="#">Community Service</a></li>
+                    <li><a href="#">Fundraisers</a></li>
+                    
+                </ul>
+            </div>
+    </div>
+
+	<div role="main" class="ui-content">
+    
+    	<div align="center">
+        	<h3>Current Events</h3>
+    	</div>
+    <br />
+    <div>
+    	
+    </div>	
+    
+    <div align="center">
+    
+    </div>    
+    
+    </div>
+    
+        <div data-role="panel" id="left-panel-ce" data-display="overlay">
+        
+        <ul data-role="listview">        
+            <!--<li data-icon="delete"><a href="#" data-rel="close">Close</a></li>-->
+            <li><a href="../index.html" rel="external">Home</a></li>
+                        
+            <li data-role="collapsible" data-inset="false" data-iconpos="right" data-content-theme="b">
+              <h3>Command</h3>
+              <ul data-role="listview">
+                <li><a href="#cmd-mission">Mission</a></li>
+                <li><a href="#current-events">Current Events</a></li>
+                <li><a href="#n2n">Important Information</a></li>
+              </ul>
+            </li><!-- /collapsible -->
+            <li data-role="collapsible" data-inset="false" data-iconpos="right" data-content-theme="b">
+              <h3>Staff</h3>
+              <ul data-role="listview">
+                <li><a href="staff.html#cmd-org" rel="external">Command Org</a></li>
+                <li><a href="staff.html#training" rel="external">Training</a></li>
+                <li><a href="staff.html#staff-focus" rel="external">Staff in Focus</a></li>
+              </ul>
+            </li><!-- /collapsible -->
+            <li data-role="collapsible" data-inset="false" data-iconpos="right" data-content-theme="b">
+              <h3>Students</h3>
+              <ul data-role="listview">
+                <li><a href="students.html#adv-school" rel="external">Advanced Schools</a></li>
+                <li><a href="students.html#a-school" rel="external">"A" Schools</a></li>
+                <li><a href="students.html#liberty" rel="external">Liberty Events</a></li>
+              </ul>
+            </li>
+            <!-- /collapsible --> 
+             <li data-role="collapsible" data-inset="false" data-iconpos="right" data-content-theme="b">
+              <h3>21st Century Sailor</h3>
+              <ul data-role="listview">
+                <li><a href="twentyfirst.html#indoc-poc" rel="external">Indoc/POC</a></li>
+                <li><a href="twentyfirst.html#csadd" rel="external">CSADD</a></li>
+                <li><a href="twentyfirst.html#other" rel="external">Other</a></li>
+              </ul>
+            </li>
+            <!-- /collapsible -->
+        </ul>
+        
+    </div><!-- /panel -->
+    
+    
+    <div data-role="panel" id="right-panel-ce" data-display="overlay" data-position="right">
+        <ul data-role="listview" data-icon="false">
+            <!--<li data-icon="delete"><a href="#" data-rel="close">Close</a></li>-->
+            <!--<li data-role="list-divider">Share this page</li>-->
+            <li><a href="http://www.netc.navy.mil/Default.aspx">NETC</a></li>
+            <li><a href="http://www.netc.navy.mil/centers/csfe/">CSFE</a></li>
+            <li><a href="policy.html#policy" rel="external">Privacy Policy</a></li>
+            <li><a href="#">CSFE PAO</a></li>            
+        
+        <li data-role="collapsible" data-inset="false" data-iconpos="left">
+        <h3>Social Media</h3>
+        	<p>
+            <a href="http://www.facebook.com/nctcgp" target="_blank">
+            <img src="http://cache.addthis.com/icons/v1/thumbs/32x32/facebook.png" alt="Gulfport" /></a> Gulfport
+            </p>
+            <br />
+            <p>
+            <a href="http://www.facebook.com/nctcopfit" target="_blank">
+            <img src="http://cache.addthis.com/icons/v1/thumbs/32x32/facebook.png" alt="Command Fitness Program" /></a> Cmd Fitness Prog.
+            </p>
+            
+        </li>
+        
+        </ul>
+        <br /><br />
+        <div align="center">
+        <img src="https://c2.staticflickr.com/6/5106/5579860783_a17e6b4b07.jpg" />
+        
+        </div>
+    </div><!-- /panel -->
+
+	<div data-role="footer" data-position="fixed" data-tap-toggle="false">
+    
+    	<div align="center">
+        	<a href="http://www.navy.com" rel="external" target="_blank"><img src="http://www.netc.navy.mil/images/ico_navyj.gif" /></a>
+            <a href="http://www.navy.mil" rel="external" target="_blank"><img src="http://www.netc.navy.mil/images/ico_usnavy.gif" /></a>
+            <a href="http://www.public.navy.mil/donhr/pages/nofear.aspx" rel="external" target="_blank">
+            <img src="http://www.netc.navy.mil/images/nofearlogo.gif" /></a>
+            <a href="https://www.foia.navy.mil/" rel="external" target="_blank"><img src="http://www.netc.navy.mil/images/navyfoia.gif" /></a>
+            <a href="http://www.safetycenter.navy.mil/" rel="external" target="_blank">
+            <img src="http://www.netc.navy.mil/images/naval_safety_center.jpg" /></a>
+        </div>
+        
+    </div>
+
+</div>
+
+<!--End Current Events-->
+
+<!--Important Information-->
+<div data-role="page" id="n2n" data-url="n2n" data-theme="a">
+
+  <div data-role="header" data-position="fixed" data-tap-toggle="false">
+    <h1>Naval Construction<br /> Training Center</h1>
+        <a href="#left-panel-n2n" data-icon="bars" data-iconpos="notext" 
+        data-shadow="false" data-iconshadow="false">Menu</a>
+        <a href="#right-panel-n2n" data-icon="bars" data-iconpos="notext" 
+        data-shadow="false" data-iconshadow="false">Disclosures</a>
+        <div data-role="navbar" data-grid="b">
+            	<ul>
+                	<li><a href="#">Quarterdeck Email</a></li>
+                    <li><a href="#">Uniform Requirements</a></li>
+                    <li><a href="#">Berthing Options</a></li>
+                    <li><a href="#">Local Area Info</a></li>
+                    <li><a href="#">Before you arrive</a></li>
+                    <li><a href="#">Command Indoc</a></li>
+                    
+                </ul>
+            </div>
+  </div>
+  
+  <div data-role="content">
+		<div align="center">
+        	<h3>Need to know</h3>
+    	</div>    
+  
+   </div>
+  
+  <div data-role="panel" id="left-panel-n2n" data-display="overlay">
+        
+        <ul data-role="listview">        
+            <!--<li data-icon="delete"><a href="#" data-rel="close">Close</a></li>-->
+            <li><a href="../index.html" rel="external">Home</a></li>
+                        
+            <li data-role="collapsible" data-inset="false" data-iconpos="right" data-content-theme="b">
+              <h3>Command</h3>
+              <ul data-role="listview">
+                <li><a href="#cmd-mission">Mission</a></li>
+                <li><a href="#current-events">Current Events</a></li>
+                <li><a href="#n2n">Important Information</a></li>
+              </ul>
+            </li><!-- /collapsible -->
+           <li data-role="collapsible" data-inset="false" data-iconpos="right" data-content-theme="b">
+              <h3>Staff</h3>
+              <ul data-role="listview">
+                <li><a href="staff.html#cmd-org" rel="external">Command Org</a></li>
+                <li><a href="staff.html#training" rel="external">Training</a></li>
+                <li><a href="staff.html#staff-focus" rel="external">Staff in Focus</a></li>
+              </ul>
+            </li><!-- /collapsible -->
+            <li data-role="collapsible" data-inset="false" data-iconpos="right" data-content-theme="b">
+              <h3>Students</h3>
+              <ul data-role="listview">
+                <li><a href="students.html#adv-school" rel="external">Advanced Schools</a></li>
+                <li><a href="students.html#a-school" rel="external">"A" Schools</a></li>
+                <li><a href="students.html#liberty" rel="external">Liberty Events</a></li>
+              </ul>
+            </li>
+            <!-- /collapsible --> 
+             <li data-role="collapsible" data-inset="false" data-iconpos="right" data-content-theme="b">
+              <h3>21st Century Sailor</h3>
+              <ul data-role="listview">
+                <li><a href="twentyfirst.html#indoc-poc" rel="external">Indoc/POC</a></li>
+                <li><a href="twentyfirst.html#csadd" rel="external">CSADD</a></li>
+                <li><a href="twentyfirst.html#other" rel="external">Other</a></li>
+              </ul>
+            </li>
+            <!-- /collapsible -->
+        </ul>
+        
+    </div><!-- /panel -->
+    
+    
+    <div data-role="panel" id="right-panel-n2n" data-display="overlay" data-position="right">
+        <ul data-role="listview" data-icon="false">
+            <!--<li data-icon="delete"><a href="#" data-rel="close">Close</a></li>-->
+            <!--<li data-role="list-divider">Share this page</li>-->
+            <li><a href="http://www.netc.navy.mil/Default.aspx">NETC</a></li>
+            <li><a href="http://www.netc.navy.mil/centers/csfe/">CSFE</a></li>
+            <li><a href="policy.html#policy" rel="external">Privacy Policy</a></li>
+            <li><a href="#">CSFE PAO</a></li>            
+        
+        <li data-role="collapsible" data-inset="false" data-iconpos="left">
+        <h3>Social Media</h3>
+        	<p>
+            <a href="http://www.facebook.com/nctcgp" target="_blank">
+            <img src="http://cache.addthis.com/icons/v1/thumbs/32x32/facebook.png" alt="Gulfport" /></a> Gulfport
+            </p>
+            <br />
+            <p>
+            <a href="http://www.facebook.com/nctcopfit" target="_blank">
+            <img src="http://cache.addthis.com/icons/v1/thumbs/32x32/facebook.png" alt="Command Fitness Program" /></a> Cmd Fitness Prog.
+            </p>
+            
+        </li>
+        
+        </ul>
+        <br /><br />
+        <div align="center">
+        <img src="https://c2.staticflickr.com/6/5106/5579860783_a17e6b4b07.jpg" />
+        
+        </div>
+    </div><!-- /panel -->
+  
+  <div data-role="footer" data-position="fixed" data-tap-toggle="false">
+    <div align="center">
+        	<a href="http://www.navy.com" rel="external" target="_blank"><img src="http://www.netc.navy.mil/images/ico_navyj.gif" /></a>
+            <a href="http://www.navy.mil" rel="external" target="_blank"><img src="http://www.netc.navy.mil/images/ico_usnavy.gif" /></a>
+            <a href="http://www.public.navy.mil/donhr/pages/nofear.aspx" rel="external" target="_blank">
+            <img src="http://www.netc.navy.mil/images/nofearlogo.gif" /></a>
+            <a href="https://www.foia.navy.mil/" rel="external" target="_blank"><img src="http://www.netc.navy.mil/images/navyfoia.gif" /></a>
+            <a href="http://www.safetycenter.navy.mil/" rel="external" target="_blank">
+            <img src="http://www.netc.navy.mil/images/naval_safety_center.jpg" /></a>
+        </div>
+  </div>
+</div>
+<!--End Important Information-->
+
+
+<!--Cmd Philosophy-->
+<div data-role="page" id="cmd-phil" data-url="cmd-phil" data-theme="a">
+
+   <div data-role="header" data-position="fixed" data-tap-toggle="false">
+    	<h1>Naval Construction <br />Training Center</h1>
+            <a href="#left-panel-cmd-phil" data-icon="bars" data-iconpos="notext" data-shadow="false" data-iconshadow="false">Menu</a>
+            <a href="#right-panel-cmd-phil" data-icon="bars" data-iconpos="notext" data-shadow="false" data-iconshadow="false">Disclosures</a>
+            <div data-role="navbar" data-grid="b">
+            	<ul>
+                	<li><a href="#cmd-phil">Command Philosophy</a></li>
+                    <li><a href="#">Command Goals</a></li>
+                    <li><a href="#">Duty Chaplain</a></li>
+                </ul>
+            </div>
+    </div>
+  
+  <div data-role="content">
+		<div align="center">
+        	  <br /><br />          
+        <img src="images/cmd_phil.png" alt=""/> </div>    
+  
+   </div>
+  
+  <div data-role="panel" id="left-panel-cmd-phil" data-display="overlay">
+        
+        <ul data-role="listview">        
+            <!--<li data-icon="delete"><a href="#" data-rel="close">Close</a></li>-->
+            <li><a href="../index.html" rel="external">Home</a></li>
+                        
+            <li data-role="collapsible" data-inset="false" data-iconpos="right" data-content-theme="b">
+              <h3>Command</h3>
+              <ul data-role="listview">
+                <li><a href="#cmd-mission">Mission</a></li>
+                <li><a href="#current-events">Current Events</a></li>
+                <li><a href="#n2n">Important Information</a></li>
+              </ul>
+            </li><!-- /collapsible -->
+           <li data-role="collapsible" data-inset="false" data-iconpos="right" data-content-theme="b">
+              <h3>Staff</h3>
+              <ul data-role="listview">
+                <li><a href="staff.html#cmd-org" rel="external">Command Org</a></li>
+                <li><a href="staff.html#training" rel="external">Training</a></li>
+                <li><a href="staff.html#staff-focus" rel="external">Staff in Focus</a></li>
+              </ul>
+            </li><!-- /collapsible -->
+            <li data-role="collapsible" data-inset="false" data-iconpos="right" data-content-theme="b">
+              <h3>Students</h3>
+              <ul data-role="listview">
+                <li><a href="students.html#adv-school" rel="external">Advanced Schools</a></li>
+                <li><a href="students.html#a-school" rel="external">"A" Schools</a></li>
+                <li><a href="students.html#liberty" rel="external">Liberty Events</a></li>
+              </ul>
+            </li>
+            <!-- /collapsible --> 
+             <li data-role="collapsible" data-inset="false" data-iconpos="right" data-content-theme="b">
+              <h3>21st Century Sailor</h3>
+              <ul data-role="listview">
+                <li><a href="twentyfirst.html#indoc-poc" rel="external">Indoc/POC</a></li>
+                <li><a href="twentyfirst.html#csadd" rel="external">CSADD</a></li>
+                <li><a href="twentyfirst.html#other" rel="external">Other</a></li>
+              </ul>
+            </li>
+            <!-- /collapsible -->
+        </ul>
+        
+    </div><!-- /panel -->
+    
+    
+    <div data-role="panel" id="right-panel-cmd-phil" data-display="overlay" data-position="right">
+        <ul data-role="listview" data-icon="false">
+            <!--<li data-icon="delete"><a href="#" data-rel="close">Close</a></li>-->
+            <!--<li data-role="list-divider">Share this page</li>-->
+            <li><a href="http://www.netc.navy.mil/Default.aspx">NETC</a></li>
+            <li><a href="http://www.netc.navy.mil/centers/csfe/">CSFE</a></li>
+            <li><a href="policy.html#policy" rel="external">Privacy Policy</a></li>
+            <li><a href="#">CSFE PAO</a></li>            
+        
+        <li data-role="collapsible" data-inset="false" data-iconpos="left">
+        <h3>Social Media</h3>
+        	<p>
+            <a href="http://www.facebook.com/nctcgp" target="_blank">
+            <img src="http://cache.addthis.com/icons/v1/thumbs/32x32/facebook.png" alt="Gulfport" /></a> Gulfport
+            </p>
+            <br />
+            <p>
+            <a href="http://www.facebook.com/nctcopfit" target="_blank">
+            <img src="http://cache.addthis.com/icons/v1/thumbs/32x32/facebook.png" alt="Command Fitness Program" /></a> Cmd Fitness Prog.
+            </p>
+            
+        </li>
+        
+        </ul>
+        <br /><br />
+        <div align="center">
+        <img src="https://c2.staticflickr.com/6/5106/5579860783_a17e6b4b07.jpg" />
+        
+        </div>
+    </div><!-- /panel -->
+  
+  <div data-role="footer" data-position="fixed" data-tap-toggle="false">
+    <div align="center">
+        	<a href="http://www.navy.com" rel="external" target="_blank"><img src="http://www.netc.navy.mil/images/ico_navyj.gif" /></a>
+            <a href="http://www.navy.mil" rel="external" target="_blank"><img src="http://www.netc.navy.mil/images/ico_usnavy.gif" /></a>
+            <a href="http://www.public.navy.mil/donhr/pages/nofear.aspx" rel="external" target="_blank">
+            <img src="http://www.netc.navy.mil/images/nofearlogo.gif" /></a>
+            <a href="https://www.foia.navy.mil/" rel="external" target="_blank"><img src="http://www.netc.navy.mil/images/navyfoia.gif" /></a>
+            <a href="http://www.safetycenter.navy.mil/" rel="external" target="_blank">
+            <img src="http://www.netc.navy.mil/images/naval_safety_center.jpg" /></a>
+        </div>
+  </div>
+</div>
+<!--Cmd Philosophy-->
+
+
+</body>
+</html>
