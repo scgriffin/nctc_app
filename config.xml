@@ -41,7 +41,7 @@
         T3 Team
     </author>
 
-    <access origin="*"/>
+    <access origin="http://www.netc.navy.mil"/>
 
     <!-- <content src="http://mysite.com/myapp.html" /> for external pages -->
     <content src="index.html" />
