@@ -42,10 +42,6 @@
     </author>
 	
 	<access origin="*"/>
-    <access origin="navy.mil" subdomains="true" />
-	<access origin="addthis.com" subdomains="true" />
-	<access origin="jquery.com" subdomains="true" />
-	<access origin="staticflickr.com" subdomains="true" />
 	
 
     <!-- <content src="http://mysite.com/myapp.html" /> for external pages -->
