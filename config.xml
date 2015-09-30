@@ -31,10 +31,10 @@
 	 android:largeScreens="true"
 	 android:xlargeScreens="true" />		
 		
-    <name>NCTC APP</name>
+    <name>NCTC APP v 2.345</name>
 
     <description>
-        NCTC APP
+        NCTC APP v 2.345
     </description>
 
     <author href="http://urs.com" email="seben.griffin@urs.com">
@@ -42,7 +42,11 @@
     </author>
 	
 	<access origin="*"/>
-    <access origin="http://navy.mil" subdomains="true" />
+    <access origin="http://www.navy.mil" subdomains="true" />
+	<access origin="http://addthis.com" subdomains="true" />
+	<access origin="http://jquery.com" subdomains="true" />
+	<access origin="https://staticflickr.com" subdomains="true" />
+	
 
     <!-- <content src="http://mysite.com/myapp.html" /> for external pages -->
     
