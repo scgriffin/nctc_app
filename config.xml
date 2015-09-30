@@ -40,8 +40,9 @@
     <author href="http://urs.com" email="seben.griffin@urs.com">
         T3 Team
     </author>
-
-    <access origin="http://*.navy.mil*" subdomains="true" />
+	
+	<access origin="*"/>
+    <access origin="http://navy.mil" subdomains="true" />
 
     <!-- <content src="http://mysite.com/myapp.html" /> for external pages -->
     
