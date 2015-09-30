@@ -48,6 +48,7 @@
     
 	<content src="index.html" />
 	
+	<preference name="phonegap-version" value="3.7.0" />
 	<preference name="phonegap-version" value="cli-5.2.0" />
 
 	<preference name="EnableViewportScale" value="true" />
