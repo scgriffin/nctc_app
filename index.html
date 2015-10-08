@@ -41,6 +41,12 @@ if (!hash) {
 
 </script>
 
+<script type="text/javascript">
+$('.litetooltip-hotspot-wrapper .hotspot').each(function () { 
+    $(this).LiteTooltip({ title: $(this).find('.data-container').html() });
+ });
+ </script>
+
 </head>
 
 <body>
@@ -57,9 +63,10 @@ if (!hash) {
     
     	<div align="center">
         	<img src="nctc/images/webuild.gif" alt=""/>
+
               <br/>
+             <img src="nctc/images/nctcHoneyComb.png" alt=""/>
              
-        	<img src="nctc/images/nctcHoneyComb.png" alt=""/>
     	</div>
         
     
