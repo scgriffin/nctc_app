@@ -16,7 +16,7 @@
 
 
 
-<script type="text/javascript">
+<!--<script type="text/javascript">
 $(document).ready(function() 
 	{
 		$('a.anchor-link').click(function(e) 
@@ -43,7 +43,7 @@ if (!hash) {
    });
 });
 
-</script>
+</script>-->
 
 </head>
 
@@ -56,48 +56,9 @@ if (!hash) {
     
     <div data-role="header" data-position="fixed" data-tap-toggle="false">
     	<h1>Naval Construction <br />Training Center</h1>
-            <a href="#left-panel-cmd" data-icon="bars" data-iconpos="notext" data-shadow="false" data-iconshadow="false">Menu</a>
-            <a href="#right-panel-cmd" data-icon="bars" data-iconpos="notext" data-shadow="false" data-iconshadow="false">Disclosures</a>
-            <div data-role="navbar" data-grid="b">
-            	<ul>
-                	<li><a href="#cmd-phil">Command Philosophy</a></li>
-                    <li><a href="#">Command Goals</a></li>
-                    <li><a href="#">Duty Chaplain</a></li>
-                </ul>
-            </div>
-    </div>
-
-	<div role="main" class="ui-content">
-    
-    	<div align="center">
-        	<h3>Our Mission</h3>
-    	</div>
-    <div>
-    	<ul>
-        	<li>Host ITRO "A" School team in Gulfport</li>
-            <li>Train and develop Sailors, Soldiers, and Airmen (BU & SW)</li>
-            <li>Train Seabees - C, G & F Schools, CBR</li>
-            <li>Train Mobilizing Unit - Tech. Training, CBR</li>
-            <li>Training Support
-            	<li>Expeditionary Combat Skills</li>
-                <li>Sheppard AFB</li>
-                <li>Fort Leonard Wood</li>
-            </li>
-          
-    	</ul>
-    </div>	
-    
-   
-    
-    <div align="center">
-    <img src="images/mission.png" width="327" height="275" alt=""/>
-    </div>    
-    
-    </div>
-    
-        <div data-role="panel" id="left-panel-cmd" data-display="overlay">
-        
-       <ul data-role="listview">
+            <a href="#popupBasic" data-rel="popup" data-icon="bars" data-iconpos="notext" data-shadow="false" data-iconshadow="false" data-transition="pop">Menu</a>
+            <div data-role="popup" id="popupBasic">
+            <ul data-role="listview">
         
             <!--<li data-icon="delete"><a href="#" data-rel="close">Close</a></li>-->
             <li><a href="../index.html" rel="external">Home</a></li>                        
@@ -136,8 +97,49 @@ if (!hash) {
             </li>
             <!-- /collapsible -->
         </ul>
-        
-    </div><!-- /panel -->
+            
+            </div>
+            
+            
+            
+            <a href="#right-panel-cmd" data-icon="bars" data-iconpos="notext" data-shadow="false" data-iconshadow="false">Disclosures</a>
+            <div data-role="navbar" data-grid="b">
+            	<ul>
+                	<li><a href="#cmd-phil">Command Philosophy</a></li>
+                    <li><a href="#">Command Goals</a></li>
+                    <li><a href="#">Duty Chaplain</a></li>
+                </ul>
+            </div>
+    </div>
+
+	<div role="main" class="ui-content">
+    
+    	<div align="center">
+        	<h3>Our Mission</h3>
+    	</div>
+    <div>
+    	<ul>
+        	<li>Host ITRO "A" School team in Gulfport</li>
+            <li>Train and develop Sailors, Soldiers, and Airmen (BU & SW)</li>
+            <li>Train Seabees - C, G & F Schools, CBR</li>
+            <li>Train Mobilizing Unit - Tech. Training, CBR</li>
+            <li>Training Support
+            	<li>Expeditionary Combat Skills</li>
+                <li>Sheppard AFB</li>
+                <li>Fort Leonard Wood</li>
+            </li>
+          
+    	</ul>
+    </div>	
+    
+   
+    
+    <div align="center">
+    <img src="images/mission.png" width="327" height="275" alt=""/>
+    </div>    
+    
+    </div>
+    
     
    
     <div data-role="panel" id="right-panel-cmd" data-display="overlay" data-position="right">
