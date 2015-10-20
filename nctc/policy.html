@@ -14,7 +14,7 @@
 <script src="../scripts2/jquery.mobile-1.4.5.js"></script>
 
 
-<script type="text/javascript">
+<!--<script type="text/javascript">
 $(document).ready(function() 
 	{
 		$('a.anchor-link').click(function(e) 
@@ -41,7 +41,7 @@ if (!hash) {
    });
 });
 
-</script>
+</script>-->
 
 </head>
 
@@ -54,8 +54,51 @@ if (!hash) {
     
     <div data-role="header" data-position="fixed" data-tap-toggle="false">
     	<h1>Naval Construction<br /> Training Center</h1>
-        <a href="#left-panel-policy" data-icon="bars" data-iconpos="notext" 
-        data-shadow="false" data-iconshadow="false">Menu</a>
+        <a href="#popupBasic" data-rel="popup" data-icon="bars" data-iconpos="notext" data-shadow="false" data-iconshadow="false" data-transition="pop">Menu</a>
+		<div data-role="popup" id="popupBasic">
+                  <ul data-role="listview">
+        
+            <!--<li data-icon="delete"><a href="#" data-rel="close">Close</a></li>-->
+            <li><a href="../index.html" rel="external">Home</a></li>
+                        
+            <li data-role="collapsible" data-inset="false" data-iconpos="right" data-content-theme="b">
+              <h3>Command</h3>
+              <ul data-role="listview">
+                <li><a href="command.html#cmd-mission" rel="external">Mission</a></li>
+                <li><a href="command.html#current-events" rel="external">Current Events</a></li>
+                <li><a href="command.html#n2n" rel="external">Important Information</a></li>
+              </ul>
+            </li><!-- /collapsible -->
+           <li data-role="collapsible" data-inset="false" data-iconpos="right" data-content-theme="b">
+              <h3>Staff</h3>
+              <ul data-role="listview">
+                <li><a href="staff.html#cmd-org" rel="external">Command Org</a></li>
+                <li><a href="staff.html#training" rel="external">Training</a></li>
+                <li><a href="staff.html#staff-focus" rel="external">Staff in Focus</a></li>
+              </ul>
+            </li><!-- /collapsible -->
+            <li data-role="collapsible" data-inset="false" data-iconpos="right" data-content-theme="b">
+              <h3>Students</h3>
+              <ul data-role="listview">
+                <li><a href="students.html#adv-school" rel="external">Advanced Schools</a></li>
+                <li><a href="students.html#a-school" rel="external">"A" Schools</a></li>
+                <li><a href="students.html#liberty" rel="external">Liberty Events</a></li>
+              </ul>
+            </li>
+            <!-- /collapsible --> 
+                        <li data-role="collapsible" data-inset="false" data-iconpos="right" data-content-theme="b">
+              <h3>21st Century Sailor</h3>
+              <ul data-role="listview">
+                <li><a href="twentyfirst.html#adv-school" rel="external">Indoc/POC</a></li>
+                <li><a href="twentyfirst.html#a-school" rel="external">CSADD</a></li>
+                <li><a href="twentyfirst.html#liberty" rel="external">Other</a></li>
+              </ul>
+            </li>
+            <!-- /collapsible -->
+
+        </ul>  
+            
+		</div>
         <a href="#right-panel-policy" data-icon="bars" data-iconpos="notext" 
         data-shadow="false" data-iconshadow="false">Disclosures</a>
     </div>
@@ -71,7 +114,7 @@ if (!hash) {
             <li><a href="#emailpri" data-ajax="false">E-MAIL PRIVACY ADVISORY</a></li>
             <li><a href="#privacyact" data-ajax="false">PRIVACY ACT ADVISORY</a></li>
         </ul>
-        <a id="noticegma"></a>    
+      <a id="noticegma"></a>    
       <hr class="hr" align="center" size="1" /><br />
       <div align="center">
       <u><b>Notice: This is a U.S Government Web Site</b></u>
@@ -127,10 +170,11 @@ if (!hash) {
       </p>
       
       <a id="emailpri"></a>
-       <hr class="hr" align="center" size="1" /><br />
+      <hr class="hr" align="center" size="1" /><br />
       <div align="center">
       <u><b>E-MAIL PRIVACY ADVISORY</b></u>
       </div>
+     
       <p align="left">
       By sending an electronic mail message (for example, an e-mail message addresed to the webmaster), you may
       be sending personal-identifying information. In these cases, we may retain the information as long as necessary to
@@ -162,49 +206,7 @@ if (!hash) {
 
     </div>
     
-        <div data-role="panel" id="left-panel-policy" data-display="overlay">
-        <ul data-role="listview">
-        
-            <!--<li data-icon="delete"><a href="#" data-rel="close">Close</a></li>-->
-            <li><a href="../index.html" rel="external">Home</a></li>
-                        
-            <li data-role="collapsible" data-inset="false" data-iconpos="right" data-content-theme="b">
-              <h3>Command</h3>
-              <ul data-role="listview">
-                <li><a href="command.html#cmd-mission" rel="external">Mission</a></li>
-                <li><a href="command.html#current-events" rel="external">Current Events</a></li>
-                <li><a href="command.html#n2n" rel="external">Important Information</a></li>
-              </ul>
-            </li><!-- /collapsible -->
-           <li data-role="collapsible" data-inset="false" data-iconpos="right" data-content-theme="b">
-              <h3>Staff</h3>
-              <ul data-role="listview">
-                <li><a href="staff.html#cmd-org" rel="external">Command Org</a></li>
-                <li><a href="staff.html#training" rel="external">Training</a></li>
-                <li><a href="staff.html#staff-focus" rel="external">Staff in Focus</a></li>
-              </ul>
-            </li><!-- /collapsible -->
-            <li data-role="collapsible" data-inset="false" data-iconpos="right" data-content-theme="b">
-              <h3>Students</h3>
-              <ul data-role="listview">
-                <li><a href="students.html#adv-school" rel="external">Advanced Schools</a></li>
-                <li><a href="students.html#a-school" rel="external">"A" Schools</a></li>
-                <li><a href="students.html#liberty" rel="external">Liberty Events</a></li>
-              </ul>
-            </li>
-            <!-- /collapsible --> 
-                        <li data-role="collapsible" data-inset="false" data-iconpos="right" data-content-theme="b">
-              <h3>21st Century Sailor</h3>
-              <ul data-role="listview">
-                <li><a href="twentyfirst.html#adv-school" rel="external">Indoc/POC</a></li>
-                <li><a href="twentyfirst.html#a-school" rel="external">CSADD</a></li>
-                <li><a href="twentyfirst.html#liberty" rel="external">Other</a></li>
-              </ul>
-            </li>
-            <!-- /collapsible -->
 
-        </ul>
-   </div><!-- /panel -->
     
     
     <div data-role="panel" id="right-panel-policy" data-display="overlay" data-position="right">

@@ -13,7 +13,7 @@
 <script src="../scripts2/jquery-1.11.3.min.js"></script>
 <script src="../scripts2/jquery.mobile-1.4.5.js"></script>
 
-<script type="text/javascript">
+<!--<script type="text/javascript">
 $(document).ready(function() 
 	{
 		$('a.anchor-link').click(function(e) 
@@ -40,7 +40,7 @@ if (!hash) {
    });
 });
 
-</script>
+</script>-->
 
 </head>
 
@@ -54,29 +54,9 @@ if (!hash) {
 
   <div data-role="header" data-position="fixed" data-tap-toggle="false">
     <h1>Naval Construction<br /> Training Center</h1>
-        <a href="#left-panel-cmd-org" data-icon="bars" data-iconpos="notext" 
-        data-shadow="false" data-iconshadow="false">Menu</a>
-        <a href="#right-panel-cmd-org" data-icon="bars" data-iconpos="notext" 
-        data-shadow="false" data-iconshadow="false">Disclosures</a>
-        <div data-role="navbar" data-grid="a">
-            	<ul>
-                	<li><a href="#">Staff Sections</a></li>
-                    <li><a href="#">Company Sections</a></li>
-                                       
-                </ul>
-            </div>
-  </div>
-  
-  <div data-role="content">
-		<div align="center">
-        	<h3>Command Organization</h3>
-    	</div>    
-  
-   </div>
-  
-  <div data-role="panel" id="left-panel-cmd-org" data-display="overlay">
-        
-        <ul data-role="listview">        
+        <a href="#popupBasic1" data-rel="popup" data-icon="bars" data-iconpos="notext" data-shadow="false" data-iconshadow="false" data-transition="pop">Menu</a>
+		<div data-role="popup" id="popupBasic1">
+          <ul data-role="listview">        
             <!--<li data-icon="delete"><a href="#" data-rel="close">Close</a></li>-->
             <li><a href="../index.html" rel="external">Home</a></li>
                         
@@ -114,10 +94,28 @@ if (!hash) {
               </ul>
             </li>
             <!-- /collapsible -->
-        </ul>
-        
-    </div><!-- /panel -->
-    
+        </ul>  
+            
+		</div>
+        <a href="#right-panel-cmd-org" data-icon="bars" data-iconpos="notext" 
+        data-shadow="false" data-iconshadow="false">Disclosures</a>
+        <div data-role="navbar" data-grid="a">
+            	<ul>
+                	<li><a href="#">Staff Sections</a></li>
+                    <li><a href="#">Company Sections</a></li>
+                                       
+                </ul>
+            </div>
+  </div>
+  
+  <div data-role="content">
+		<div align="center">
+        	<h3>Command Organization</h3>
+    	</div>    
+  
+   </div>
+  
+      
     
     <div data-role="panel" id="right-panel-cmd-org" data-display="overlay" data-position="right">
         <ul data-role="listview" data-icon="false">
@@ -171,29 +169,9 @@ if (!hash) {
 
   <div data-role="header" data-position="fixed" data-tap-toggle="false">
     <h1>Naval Construction<br /> Training Center</h1>
-        <a href="#left-panel-training" data-icon="bars" data-iconpos="notext" 
-        data-shadow="false" data-iconshadow="false">Menu</a>
-        <a href="#right-panel-training" data-icon="bars" data-iconpos="notext" 
-        data-shadow="false" data-iconshadow="false">Disclosures</a>
-        <div data-role="navbar" data-grid="b">
-            	<ul>
-                	<li><a href="#">Annual</a></li>
-                    <li><a href="#">Short Notice Req</a></li>
-                    <li><a href="#">ESAMS</a></li>                   
-                </ul>
-            </div>
-  </div>
-  
-  <div data-role="content">
-		<div align="center">
-        	<h3>Training</h3>
-    	</div>    
-  
-   </div>
-  
-  <div data-role="panel" id="left-panel-training" data-display="overlay">
-        
-        <ul data-role="listview">        
+        <a href="#popupBasic2" data-rel="popup" data-icon="bars" data-iconpos="notext" data-shadow="false" data-iconshadow="false" data-transition="pop">Menu</a>
+		<div data-role="popup" id="popupBasic2">
+           <ul data-role="listview">        
             <!--<li data-icon="delete"><a href="#" data-rel="close">Close</a></li>-->
             <li><a href="../index.html" rel="external">Home</a></li>
                         
@@ -231,9 +209,28 @@ if (!hash) {
               </ul>
             </li>
             <!-- /collapsible -->
-        </ul>
-        
-    </div><!-- /panel -->
+        </ul> 
+            
+		</div>
+        <a href="#right-panel-training" data-icon="bars" data-iconpos="notext" 
+        data-shadow="false" data-iconshadow="false">Disclosures</a>
+        <div data-role="navbar" data-grid="b">
+            	<ul>
+                	<li><a href="#">Annual</a></li>
+                    <li><a href="#">Short Notice Req</a></li>
+                    <li><a href="#">ESAMS</a></li>                   
+                </ul>
+            </div>
+  </div>
+  
+  <div data-role="content">
+		<div align="center">
+        	<h3>Training</h3>
+    	</div>    
+  
+   </div>
+  
+
     
     
     <div data-role="panel" id="right-panel-training" data-display="overlay" data-position="right">
@@ -288,29 +285,9 @@ if (!hash) {
 
   <div data-role="header" data-position="fixed" data-tap-toggle="false">
     <h1>Naval Construction<br /> Training Center</h1>
-        <a href="#left-panel-staff-focus" data-icon="bars" data-iconpos="notext" 
-        data-shadow="false" data-iconshadow="false">Menu</a>
-        <a href="#right-panel-staff-focus" data-icon="bars" data-iconpos="notext" 
-        data-shadow="false" data-iconshadow="false">Disclosures</a>
-        <!--<div data-role="navbar" data-grid="b">
-            	<ul>
-                	<li><a href="#">Annual</a></li>
-                    <li><a href="#">Short Notice Req</a></li>
-                    <li><a href="#">ESAMS</a></li>                   
-                </ul>
-            </div>-->
-  </div>
-  
-  <div data-role="content">
-		<div align="center">
-        	<h3>Staff in Focus</h3>
-    	</div>    
-  
-   </div>
-  
-  <div data-role="panel" id="left-panel-staff-focus" data-display="overlay">
-        
-        <ul data-role="listview">        
+        <a href="#popupBasic3" data-rel="popup" data-icon="bars" data-iconpos="notext" data-shadow="false" data-iconshadow="false" data-transition="pop">Menu</a>
+		<div data-role="popup" id="popupBasic3">
+          <ul data-role="listview">        
             <!--<li data-icon="delete"><a href="#" data-rel="close">Close</a></li>-->
             <li><a href="../index.html" rel="external">Home</a></li>
                         
@@ -348,9 +325,29 @@ if (!hash) {
               </ul>
             </li>
             <!-- /collapsible -->
-        </ul>
+        </ul> 
+            
+		</div>
         
-    </div><!-- /panel -->
+        <a href="#right-panel-staff-focus" data-icon="bars" data-iconpos="notext" 
+        data-shadow="false" data-iconshadow="false">Disclosures</a>
+        <!--<div data-role="navbar" data-grid="b">
+            	<ul>
+                	<li><a href="#">Annual</a></li>
+                    <li><a href="#">Short Notice Req</a></li>
+                    <li><a href="#">ESAMS</a></li>                   
+                </ul>
+            </div>-->
+  </div>
+  
+  <div data-role="content">
+		<div align="center">
+        	<h3>Staff in Focus</h3>
+    	</div>    
+  
+   </div>
+  
+
     
     
     <div data-role="panel" id="right-panel-staff-focus" data-display="overlay" data-position="right">

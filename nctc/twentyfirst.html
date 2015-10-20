@@ -13,7 +13,7 @@
 <script src="../scripts2/jquery-1.11.3.min.js"></script>
 <script src="../scripts2/jquery.mobile-1.4.5.js"></script>
 
-<script type="text/javascript">
+<!--<script type="text/javascript">
 $(document).ready(function() 
 	{
 		$('a.anchor-link').click(function(e) 
@@ -40,7 +40,7 @@ if (!hash) {
    });
 });
 
-</script>
+</script>-->
 
 </head>
 
@@ -51,8 +51,49 @@ if (!hash) {
 
   <div data-role="header" data-position="fixed" data-tap-toggle="false">
     <h1>Naval Construction<br /> Training Center</h1>
-        <a href="#left-panel-indoc-poc" data-icon="bars" data-iconpos="notext" 
-        data-shadow="false" data-iconshadow="false">Menu</a>
+        <a href="#popupBasic1" data-rel="popup" data-icon="bars" data-iconpos="notext" data-shadow="false" data-iconshadow="false" data-transition="pop">Menu</a>
+		<div data-role="popup" id="popupBasic1">
+           <ul data-role="listview">        
+            <!--<li data-icon="delete"><a href="#" data-rel="close">Close</a></li>-->
+            <li><a href="../index.html" rel="external">Home</a></li>
+                        
+            <li data-role="collapsible" data-inset="false" data-iconpos="right" data-content-theme="b">
+              <h3>Command</h3>
+              <ul data-role="listview">
+                <li><a href="command.html#cmd-mission" rel="external">Mission</a></li>
+                <li><a href="command.html#current-events" rel="external">Current Events</a></li>
+                <li><a href="command.html#n2n" rel="external">Important Information</a></li>
+              </ul>
+            </li><!-- /collapsible -->
+           <li data-role="collapsible" data-inset="false" data-iconpos="right" data-content-theme="b">
+              <h3>Staff</h3>
+              <ul data-role="listview">
+                <li><a href="staff.html#cmd-org" rel="external">Command Org</a></li>
+                <li><a href="staff.html#training" rel="external">Training</a></li>
+                <li><a href="staff.html#staff-focus" rel="external">Staff in Focus</a></li>
+              </ul>
+            </li><!-- /collapsible -->
+            <li data-role="collapsible" data-inset="false" data-iconpos="right" data-content-theme="b">
+              <h3>Students</h3>
+              <ul data-role="listview">
+                <li><a href="students.html#adv-school" rel="external">Advanced Schools</a></li>
+                <li><a href="students.html#a-school" rel="external">"A" Schools</a></li>
+                <li><a href="students.html#liberty" rel="external">Liberty Events</a></li>
+              </ul>
+            </li>
+            <!-- /collapsible --> 
+            <li data-role="collapsible" data-inset="false" data-iconpos="right" data-content-theme="b">
+              <h3>21st Century Sailor</h3>
+              <ul data-role="listview">
+                <li><a href="#indoc-poc">Indoc/POC</a></li>
+                <li><a href="#csadd">CSADD</a></li>
+                <li><a href="#other">Other</a></li>
+              </ul>
+            </li>
+            <!-- /collapsible -->
+        </ul> 
+            
+		</div>
         <a href="#right-panel-indoc-poc" data-icon="bars" data-iconpos="notext" 
         data-shadow="false" data-iconshadow="false">Disclosures</a>
         
@@ -109,50 +150,7 @@ if (!hash) {
     </table>
    </div>
   
-  <!--Left Panel Pages-->
-  <div data-role="panel" id="left-panel-indoc-poc" data-display="overlay">
-        
-        <ul data-role="listview">        
-            <!--<li data-icon="delete"><a href="#" data-rel="close">Close</a></li>-->
-            <li><a href="../index.html" rel="external">Home</a></li>
-                        
-            <li data-role="collapsible" data-inset="false" data-iconpos="right" data-content-theme="b">
-              <h3>Command</h3>
-              <ul data-role="listview">
-                <li><a href="command.html#cmd-mission" rel="external">Mission</a></li>
-                <li><a href="command.html#current-events" rel="external">Current Events</a></li>
-                <li><a href="command.html#n2n" rel="external">Important Information</a></li>
-              </ul>
-            </li><!-- /collapsible -->
-           <li data-role="collapsible" data-inset="false" data-iconpos="right" data-content-theme="b">
-              <h3>Staff</h3>
-              <ul data-role="listview">
-                <li><a href="staff.html#cmd-org" rel="external">Command Org</a></li>
-                <li><a href="staff.html#training" rel="external">Training</a></li>
-                <li><a href="staff.html#staff-focus" rel="external">Staff in Focus</a></li>
-              </ul>
-            </li><!-- /collapsible -->
-            <li data-role="collapsible" data-inset="false" data-iconpos="right" data-content-theme="b">
-              <h3>Students</h3>
-              <ul data-role="listview">
-                <li><a href="students.html#adv-school" rel="external">Advanced Schools</a></li>
-                <li><a href="students.html#a-school" rel="external">"A" Schools</a></li>
-                <li><a href="students.html#liberty" rel="external">Liberty Events</a></li>
-              </ul>
-            </li>
-            <!-- /collapsible --> 
-            <li data-role="collapsible" data-inset="false" data-iconpos="right" data-content-theme="b">
-              <h3>21st Century Sailor</h3>
-              <ul data-role="listview">
-                <li><a href="#indoc-poc">Indoc/POC</a></li>
-                <li><a href="#csadd">CSADD</a></li>
-                <li><a href="#other">Other</a></li>
-              </ul>
-            </li>
-            <!-- /collapsible -->
-        </ul>
-        
-    </div><!-- /panel -->
+
     
     <!--Right Panel-->
     <div data-role="panel" id="right-panel-indoc-poc" data-display="overlay" data-position="right">
@@ -207,8 +205,49 @@ if (!hash) {
 
   <div data-role="header" data-position="fixed" data-tap-toggle="false">
     <h1>Naval Construction<br /> Training Center</h1>
-        <a href="#left-panel-csadd" data-icon="bars" data-iconpos="notext" 
-        data-shadow="false" data-iconshadow="false">Menu</a>
+        <a href="#popupBasic2" data-rel="popup" data-icon="bars" data-iconpos="notext" data-shadow="false" data-iconshadow="false" data-transition="pop">Menu</a>
+		<div data-role="popup" id="popupBasic2">
+           <ul data-role="listview">        
+            <!--<li data-icon="delete"><a href="#" data-rel="close">Close</a></li>-->
+            <li><a href="../index.html" rel="external">Home</a></li>
+                        
+            <li data-role="collapsible" data-inset="false" data-iconpos="right" data-content-theme="b">
+              <h3>Command</h3>
+              <ul data-role="listview">
+                <li><a href="command.html#cmd-mission" rel="external">Mission</a></li>
+                <li><a href="command.html#current-events" rel="external">Current Events</a></li>
+                <li><a href="command.html#n2n" rel="external">Important Information</a></li>
+              </ul>
+            </li><!-- /collapsible -->
+           <li data-role="collapsible" data-inset="false" data-iconpos="right" data-content-theme="b">
+              <h3>Staff</h3>
+              <ul data-role="listview">
+                <li><a href="staff.html#cmd-org" rel="external">Command Org</a></li>
+                <li><a href="staff.html#training" rel="external">Training</a></li>
+                <li><a href="staff.html#staff-focus" rel="external">Staff in Focus</a></li>
+              </ul>
+            </li><!-- /collapsible -->
+            <li data-role="collapsible" data-inset="false" data-iconpos="right" data-content-theme="b">
+              <h3>Students</h3>
+              <ul data-role="listview">
+                <li><a href="students.html#adv-school" rel="external">Advanced Schools</a></li>
+                <li><a href="students.html#a-school" rel="external">"A" Schools</a></li>
+                <li><a href="students.html#liberty" rel="external">Liberty Events</a></li>
+              </ul>
+            </li>
+            <!-- /collapsible --> 
+            <li data-role="collapsible" data-inset="false" data-iconpos="right" data-content-theme="b">
+              <h3>21st Century Sailor</h3>
+              <ul data-role="listview">
+                <li><a href="#indoc-poc">Indoc/POC</a></li>
+                <li><a href="#csadd">CSADD</a></li>
+                <li><a href="#other">Other</a></li>
+              </ul>
+            </li>
+            <!-- /collapsible -->
+        </ul> 
+            
+		</div>
         <a href="#right-panel-csadd" data-icon="bars" data-iconpos="notext" 
         data-shadow="false" data-iconshadow="false">Disclosures</a>
         
@@ -270,52 +309,7 @@ HOOYAH!</p>
   
 </div>
   
-  
-  <div data-role="panel" id="left-panel-csadd" data-display="overlay">
-        
-        <ul data-role="listview">        
-            <!--<li data-icon="delete"><a href="#" data-rel="close">Close</a></li>-->
-            <li><a href="../index.html" rel="external">Home</a></li>
-                        
-            <li data-role="collapsible" data-inset="false" data-iconpos="right" data-content-theme="b">
-              <h3>Command</h3>
-              <ul data-role="listview">
-                <li><a href="command.html#cmd-mission" rel="external">Mission</a></li>
-                <li><a href="command.html#current-events" rel="external">Current Events</a></li>
-                <li><a href="command.html#n2n" rel="external">Important Information</a></li>
-              </ul>
-            </li><!-- /collapsible -->
-           <li data-role="collapsible" data-inset="false" data-iconpos="right" data-content-theme="b">
-              <h3>Staff</h3>
-              <ul data-role="listview">
-                <li><a href="staff.html#cmd-org" rel="external">Command Org</a></li>
-                <li><a href="staff.html#training" rel="external">Training</a></li>
-                <li><a href="staff.html#staff-focus" rel="external">Staff in Focus</a></li>
-              </ul>
-            </li><!-- /collapsible -->
-            <li data-role="collapsible" data-inset="false" data-iconpos="right" data-content-theme="b">
-              <h3>Students</h3>
-              <ul data-role="listview">
-                <li><a href="students.html#adv-school" rel="external">Advanced Schools</a></li>
-                <li><a href="students.html#a-school" rel="external">"A" Schools</a></li>
-                <li><a href="students.html#liberty" rel="external">Liberty Events</a></li>
-              </ul>
-            </li>
-            <!-- /collapsible --> 
-            <li data-role="collapsible" data-inset="false" data-iconpos="right" data-content-theme="b">
-              <h3>21st Century Sailor</h3>
-              <ul data-role="listview">
-                <li><a href="#indoc-poc">Indoc/POC</a></li>
-                <li><a href="#csadd">CSADD</a></li>
-                <li><a href="#other">Other</a></li>
-              </ul>
-            </li>
-            <!-- /collapsible -->
-        </ul>
-        
-    </div><!-- /panel -->
-    
-    
+     
     <div data-role="panel" id="right-panel-csadd" data-display="overlay" data-position="right">
         <ul data-role="listview" data-icon="false">
             <!--<li data-icon="delete"><a href="#" data-rel="close">Close</a></li>-->
@@ -372,28 +366,9 @@ HOOYAH!</p>
 
  <div data-role="header" data-position="fixed" data-tap-toggle="false">
     <h1>Naval Construction<br /> Training Center</h1>
-        <a href="#left-panel-other" data-icon="bars" data-iconpos="notext" 
-        data-shadow="false" data-iconshadow="false">Menu</a>
-        <a href="#right-panel-other" data-icon="bars" data-iconpos="notext" 
-        data-shadow="false" data-iconshadow="false">Disclosures</a>
-        
-  </div>
-  
-  <div data-role="content">
-  <div align="center">The Sailor's Creed</div>
-  <p>
-I am a United States Sailor. <br />
-I will support and defend the Constitution of the United States of America and I will obey the orders of those appointed over me. <br />
-I represent the fighting spirit of the Navy and those who have gone before me to defend freedom and democracy around the world. <br />
-I proudly serve my country's Navy combat team with Honor, Courage and Commitment. <br />
-I am committed to excellence and the fair treatment of all.  
-  
-  </p>  
-</div>
-
-  <div data-role="panel" id="left-panel-other" data-display="overlay">
-        
-        <ul data-role="listview">        
+        <a href="#popupBasic3" data-rel="popup" data-icon="bars" data-iconpos="notext" data-shadow="false" data-iconshadow="false" data-transition="pop">Menu</a>
+		<div data-role="popup" id="popupBasic3">
+          <ul data-role="listview">        
             <!--<li data-icon="delete"><a href="#" data-rel="close">Close</a></li>-->
             <li><a href="../index.html" rel="external">Home</a></li>
                         
@@ -431,11 +406,26 @@ I am committed to excellence and the fair treatment of all.
               </ul>
             </li>
             <!-- /collapsible -->
-        </ul>
+        </ul>  
+            
+		</div>
+        <a href="#right-panel-other" data-icon="bars" data-iconpos="notext" 
+        data-shadow="false" data-iconshadow="false">Disclosures</a>
         
-    </div><!-- /panel -->
-    
-    
+  </div>
+  
+  <div data-role="content">
+  <div align="center">The Sailor's Creed</div>
+  <p>
+I am a United States Sailor. <br />
+I will support and defend the Constitution of the United States of America and I will obey the orders of those appointed over me. <br />
+I represent the fighting spirit of the Navy and those who have gone before me to defend freedom and democracy around the world. <br />
+I proudly serve my country's Navy combat team with Honor, Courage and Commitment. <br />
+I am committed to excellence and the fair treatment of all.  
+  
+  </p>  
+</div>
+   
     <div data-role="panel" id="right-panel-other" data-display="overlay" data-position="right">
         <ul data-role="listview" data-icon="false">
             <!--<li data-icon="delete"><a href="#" data-rel="close">Close</a></li>-->
@@ -482,4 +472,4 @@ I am committed to excellence and the fair treatment of all.
 </div>
 
 </body>
-</html>
+</html>	

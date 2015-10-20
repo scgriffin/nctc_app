@@ -13,7 +13,7 @@
 <script src="../scripts2/jquery-1.11.3.min.js"></script>
 <script src="../scripts2/jquery.mobile-1.4.5.js"></script>
 
-<script type="text/javascript">
+<!--<script type="text/javascript">
 $(document).ready(function() 
 	{
 		$('a.anchor-link').click(function(e) 
@@ -40,7 +40,7 @@ if (!hash) {
    });
 });
 
-</script>
+</script>-->
 
 </head>
 
@@ -53,29 +53,9 @@ if (!hash) {
 
   <div data-role="header" data-position="fixed" data-tap-toggle="false">
     <h1>Naval Construction<br /> Training Center</h1>
-        <a href="#left-panel-adv-school" data-icon="bars" data-iconpos="notext" 
-        data-shadow="false" data-iconshadow="false">Menu</a>
-        <a href="#right-panel-adv-school" data-icon="bars" data-iconpos="notext" 
-        data-shadow="false" data-iconshadow="false">Disclosures</a>
-        <div data-role="navbar" data-grid="b">
-            	<ul>
-                	<li><a href="#">Need to Know</a></li>
-                    <li><a href="#">Reporting Info</a></li>
-                    <li><a href="#">GMT Req</a></li>                   
-                </ul>
-            </div>
-  </div>
-  
-  <div data-role="content">
-		<div align="center">
-        	<h3>Advanced Schools</h3>
-    	</div>    
-  
-   </div>
-  
-  <div data-role="panel" id="left-panel-adv-school" data-display="overlay">
-        
-        <ul data-role="listview">        
+        <a href="#popupBasic1" data-rel="popup" data-icon="bars" data-iconpos="notext" data-shadow="false" data-iconshadow="false" data-transition="pop">Menu</a>
+		<div data-role="popup" id="popupBasic1">
+          <ul data-role="listview">        
             <!--<li data-icon="delete"><a href="#" data-rel="close">Close</a></li>-->
             <li><a href="../index.html" rel="external">Home</a></li>
                         
@@ -113,11 +93,28 @@ if (!hash) {
               </ul>
             </li>
             <!-- /collapsible -->
-        </ul>
-        
-    </div><!-- /panel -->
-    
-    
+        </ul>   
+            
+		</div>
+        <a href="#right-panel-adv-school" data-icon="bars" data-iconpos="notext" 
+        data-shadow="false" data-iconshadow="false">Disclosures</a>
+        <div data-role="navbar" data-grid="b">
+            	<ul>
+                	<li><a href="#">Need to Know</a></li>
+                    <li><a href="#">Reporting Info</a></li>
+                    <li><a href="#">GMT Req</a></li>                   
+                </ul>
+            </div>
+  </div>
+  
+  <div data-role="content">
+		<div align="center">
+        	<h3>Advanced Schools</h3>
+    	</div>    
+  
+   </div>
+  
+   
     <div data-role="panel" id="right-panel-adv-school" data-display="overlay" data-position="right">
         <ul data-role="listview" data-icon="false">
             <!--<li data-icon="delete"><a href="#" data-rel="close">Close</a></li>-->
@@ -170,8 +167,49 @@ if (!hash) {
 
   <div data-role="header" data-position="fixed" data-tap-toggle="false">
     <h1>Naval Construction<br /> Training Center</h1>
-        <a href="#left-panel-a-school" data-icon="bars" data-iconpos="notext" 
-        data-shadow="false" data-iconshadow="false">Menu</a>
+        <a href="#popupBasic2" data-rel="popup" data-icon="bars" data-iconpos="notext" data-shadow="false" data-iconshadow="false" data-transition="pop">Menu</a>
+		<div data-role="popup" id="popupBasic2">
+           <ul data-role="listview">        
+            <!--<li data-icon="delete"><a href="#" data-rel="close">Close</a></li>-->
+            <li><a href="../index.html" rel="external">Home</a></li>
+                        
+            <li data-role="collapsible" data-inset="false" data-iconpos="right" data-content-theme="b">
+              <h3>Command</h3>
+              <ul data-role="listview">
+                <li><a href="command.html#cmd-mission" rel="external">Mission</a></li>
+                <li><a href="command.html#current-events" rel="external">Current Events</a></li>
+                <li><a href="command.html#n2n" rel="external">Important Information</a></li>
+              </ul>
+            </li><!-- /collapsible -->
+           <li data-role="collapsible" data-inset="false" data-iconpos="right" data-content-theme="b">
+              <h3>Staff</h3>
+              <ul data-role="listview">
+                <li><a href="staff.html#cmd-org" rel="external">Command Org</a></li>
+                <li><a href="staff.html#training" rel="external">Training</a></li>
+                <li><a href="staff.html#staff-focus" rel="external">Staff in Focus</a></li>
+              </ul>
+            </li><!-- /collapsible -->
+            <li data-role="collapsible" data-inset="false" data-iconpos="right" data-content-theme="b">
+              <h3>Students</h3>
+              <ul data-role="listview">
+                <li><a href="#adv-school">Advanced Schools</a></li>
+                <li><a href="#a-school">"A" Schools</a></li>
+                <li><a href="#liberty">Liberty Events</a></li>
+              </ul>
+            </li>
+            <!-- /collapsible --> 
+             <li data-role="collapsible" data-inset="false" data-iconpos="right" data-content-theme="b">
+              <h3>21st Century Sailor</h3>
+              <ul data-role="listview">
+                <li><a href="twentyfirst.html#indoc-poc" rel="external">Indoc/POC</a></li>
+                <li><a href="twentyfirst.html#csadd" rel="external">CSADD</a></li>
+                <li><a href="twentyfirst.html#other" rel="external">Other</a></li>
+              </ul>
+            </li>
+            <!-- /collapsible -->
+        </ul> 
+            
+		</div>
         <a href="#right-panel-a-school" data-icon="bars" data-iconpos="notext" 
         data-shadow="false" data-iconshadow="false">Disclosures</a>
        
@@ -211,50 +249,6 @@ if (!hash) {
       </div>
   </div>
   </div>
-  <div data-role="panel" id="left-panel-a-school" data-display="overlay">
-        
-        <ul data-role="listview">        
-            <!--<li data-icon="delete"><a href="#" data-rel="close">Close</a></li>-->
-            <li><a href="../index.html" rel="external">Home</a></li>
-                        
-            <li data-role="collapsible" data-inset="false" data-iconpos="right" data-content-theme="b">
-              <h3>Command</h3>
-              <ul data-role="listview">
-                <li><a href="command.html#cmd-mission" rel="external">Mission</a></li>
-                <li><a href="command.html#current-events" rel="external">Current Events</a></li>
-                <li><a href="command.html#n2n" rel="external">Important Information</a></li>
-              </ul>
-            </li><!-- /collapsible -->
-           <li data-role="collapsible" data-inset="false" data-iconpos="right" data-content-theme="b">
-              <h3>Staff</h3>
-              <ul data-role="listview">
-                <li><a href="staff.html#cmd-org" rel="external">Command Org</a></li>
-                <li><a href="staff.html#training" rel="external">Training</a></li>
-                <li><a href="staff.html#staff-focus" rel="external">Staff in Focus</a></li>
-              </ul>
-            </li><!-- /collapsible -->
-            <li data-role="collapsible" data-inset="false" data-iconpos="right" data-content-theme="b">
-              <h3>Students</h3>
-              <ul data-role="listview">
-                <li><a href="#adv-school">Advanced Schools</a></li>
-                <li><a href="#a-school">"A" Schools</a></li>
-                <li><a href="#liberty">Liberty Events</a></li>
-              </ul>
-            </li>
-            <!-- /collapsible --> 
-             <li data-role="collapsible" data-inset="false" data-iconpos="right" data-content-theme="b">
-              <h3>21st Century Sailor</h3>
-              <ul data-role="listview">
-                <li><a href="twentyfirst.html#indoc-poc" rel="external">Indoc/POC</a></li>
-                <li><a href="twentyfirst.html#csadd" rel="external">CSADD</a></li>
-                <li><a href="twentyfirst.html#other" rel="external">Other</a></li>
-              </ul>
-            </li>
-            <!-- /collapsible -->
-        </ul>
-        
-    </div><!-- /panel -->
-    
     
     <div data-role="panel" id="right-panel-a-school" data-display="overlay" data-position="right">
         <ul data-role="listview" data-icon="false">
@@ -309,31 +303,9 @@ if (!hash) {
 
   <div data-role="header" data-position="fixed" data-tap-toggle="false">
     <h1>Naval Construction<br /> Training Center</h1>
-        <a href="#left-panel-liberty" data-icon="bars" data-iconpos="notext" 
-        data-shadow="false" data-iconshadow="false">Menu</a>
-        <a href="#right-panel-liberty" data-icon="bars" data-iconpos="notext" 
-        data-shadow="false" data-iconshadow="false">Disclosures</a>
-       
-  </div>
-  
-  <div data-role="content">
-		<div align="center">
-        	<h3>Liberty</h3>
-    	</div>    
-  
-    <div>
-      <ul>
-        <li><a href="http://www.discovermwr.com/thingstodo/liberty.html" target="_blank">MWR / Single Sailor Programs</a></li>
-        <li>MWR Family Programs</li>
-        <li>Movie Theater Schedule</li>
-      </ul>
-    </div>
-  
- </div>
-  
-  <div data-role="panel" id="left-panel-liberty" data-display="overlay">
-        
-        <ul data-role="listview">        
+        <a href="#popupBasic3" data-rel="popup" data-icon="bars" data-iconpos="notext" data-shadow="false" data-iconshadow="false" data-transition="pop">Menu</a>
+		<div data-role="popup" id="popupBasic3">
+           <ul data-role="listview">        
             <!--<li data-icon="delete"><a href="#" data-rel="close">Close</a></li>-->
             <li><a href="../index.html" rel="external">Home</a></li>
                         
@@ -371,11 +343,29 @@ if (!hash) {
               </ul>
             </li>
             <!-- /collapsible -->
-        </ul>
-        
-    </div><!-- /panel -->
-    
-    
+        </ul> 
+            
+		</div>
+        <a href="#right-panel-liberty" data-icon="bars" data-iconpos="notext" 
+        data-shadow="false" data-iconshadow="false">Disclosures</a>
+       
+  </div>
+  
+  <div data-role="content">
+		<div align="center">
+        	<h3>Liberty</h3>
+    	</div>    
+  
+    <div>
+      <ul>
+        <li><a href="http://www.discovermwr.com/thingstodo/liberty.html" target="_blank">MWR / Single Sailor Programs</a></li>
+        <li>MWR Family Programs</li>
+        <li>Movie Theater Schedule</li>
+      </ul>
+    </div>
+  
+ </div>
+  
     <div data-role="panel" id="right-panel-liberty" data-display="overlay" data-position="right">
         <ul data-role="listview" data-icon="false">
             <!--<li data-icon="delete"><a href="#" data-rel="close">Close</a></li>-->
