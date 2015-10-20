@@ -55,26 +55,11 @@ $('.litetooltip-hotspot-wrapper .hotspot').each(function () {
     
     <div data-role="header" data-position="fixed" data-tap-toggle="false">
     	<h1>Naval Construction <br />Training Center</h1>
-            <a href="#left-panel" data-icon="bars" data-iconpos="notext" data-shadow="false" data-iconshadow="false">Menu</a>
-            <a href="#right-panel" data-icon="bars" data-iconpos="notext" data-shadow="false" data-iconshadow="false">Disclosures</a>
-    </div>
-
-	<div role="main" class="ui-content">
-    
-    	<div align="center">
-        	<img src="nctc/images/webuild.gif" alt=""/>
-
-              <br/>
-             <img src="nctc/images/nctcHoneyComb.png" alt=""/>
-             
-    	</div>
-        
-    
-    </div>
-    
-     <div data-role="panel" id="left-panel" data-display="overlay">
-        
-        <ul data-role="listview">
+    <div data-role="header" data-position="fixed" data-tap-toggle="false">
+    	<h1>Naval Construction <br />Training Center</h1>
+             <a href="#popupBasic" data-icon="bars" data-iconpos="notext" data-rel="popup" data-transition="pop">Menu</a>
+            <div data-role="popup" id="popupBasic">
+            <ul data-role="listview">
             <!-- <li data-icon="delete"><a href="#" data-rel="close">Close</a></li>-->
             <!--<li data-icon="back"><a href="#demo-intro" data-rel="back">Demo intro</a></li>-->
             
@@ -139,8 +124,25 @@ $('.litetooltip-hotspot-wrapper .hotspot').each(function () {
               </ul>
             </li>
         </ul>
+            </div>
+            <a href="#right-panel" data-icon="bars" data-iconpos="notext" data-shadow="false" data-iconshadow="false">Disclosures</a>
+    </div>
+            <a href="#right-panel" data-icon="bars" data-iconpos="notext" data-shadow="false" data-iconshadow="false">Disclosures</a>
+    </div>
+
+	<div role="main" class="ui-content">
+    
+    	<div align="center">
+        	<img src="nctc/images/webuild.gif" alt=""/>
+
+              <br/>
+             <img src="nctc/images/nctcHoneyComb.png" alt=""/>
+             
+    	</div>
         
-    </div><!-- /panel -->
+    
+    </div>
+    
     
     
     <div data-role="panel" id="right-panel" data-display="overlay" data-position="right">

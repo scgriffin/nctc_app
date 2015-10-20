@@ -24,53 +24,14 @@
 
   <div data-role="header" data-position="fixed" data-tap-toggle="false">
     <h1>Naval Construction<br /> Training Center</h1>
-        <a href="#left-panel-cmds" data-icon="bars" data-iconpos="notext" 
-        data-shadow="false" data-iconshadow="false">Menu</a>
-        <a href="#right-panel-cmds" data-icon="bars" data-iconpos="notext" 
-        data-shadow="false" data-iconshadow="false">Disclosures</a>
-        
-  </div>
-  <br />
-  <br />
-  <div data-role="content">
-		<!--<div align="center"><h3>POC's</h3></div>-->    
-  
-   <table Cellpadding="2" Cellspacing="0" align="Center" bgcolor="#F2F2F2">
-      <tr>
-      <td colspan="2" align="center" class="Pagesubhdr" bgcolor="#CFCFCF"><b>Command Links</b></td>
-      </tr>
-      <tr align="left">
-      <td width="60%" class="Pagetxt" bgcolor="#FFFFFF">Facebook </td>
-      <!--<td width="40%" class="Pagetxt" bgcolor="#FFFFFF">COMM (228) 871-2531</td>-->
-      </tr>
-      <tr align="left">
-      <td>BOL/Uniform Regulations</td>
-      <!--<td>COMM (228) 871-2531</td>-->
-      </tr>
-      <tr align="left">
-      <td bgcolor="#FFFFFF">USA/USAF</td>
-      <!--<td bgcolor="#FFFFFF">COMM (228) 871- 2761</td>-->
-      </tr>
-      <tr align="left">
-      <td>Military One Source</td>
-      <!--<td>COMM (228) 871- 2531</td>-->
-      </tr>
-      <tr align="left">
-      <td bgcolor="#FFFFFF">NFASS Mobile App</td>
-      <!--<td bgcolor="#FFFFFF">COMM (228) 871-2280</td>-->
-      </tr>
-      <tr align="left">
-      <td>Navy News RSS</td>
-      <!--<td>COMM (228) 871-3365</td>-->
-      </tr>
-      
-    </table>
-   </div>
-  
-  <!--Left Panel Pages-->
-  <div data-role="panel" id="left-panel-cmds" data-display="overlay">
-  
-<ul data-role="listview">        
+    
+        <a href="#popupBasic" data-rel="popup" <a href="#popupBasic" 
+        	data-icon="bars" data-iconpos="notext" 
+            	data-shadow="false" data-iconshadow="false" 
+                 	data-transition="pop">Basic Popup</a>
+                    
+        <div data-role="popup" id="popupBasic">
+        <ul data-role="listview">        
             <!--<li data-icon="delete"><a href="#" data-rel="close">Close</a></li>-->
             <li><a href="../index.html" rel="external">Home</a></li>
                         
@@ -136,11 +97,53 @@
             </li>
             <!-- /collapsible -->
         </ul>
-   
+        </div>
+        <div data-role="popup" id="popupBasic">
+        <p>This is a completely basic popup, no options set.</p>
+        </div>
         
-    </div> 
-   
-    <!-- /panel -->
+        <a href="#right-panel-cmds" data-icon="bars" data-iconpos="notext" data-shadow="false" data-iconshadow="false">Disclosures</a>
+        
+  </div>
+  <br />
+  <br />
+  <div data-role="content">
+		<!--<div align="center"><h3>POC's</h3></div>-->    
+  
+   <table Cellpadding="2" Cellspacing="0" align="Center" bgcolor="#F2F2F2">
+      <tr>
+      <td colspan="2" align="center" class="Pagesubhdr" bgcolor="#CFCFCF"><b>Command Links</b></td>
+      </tr>
+      <tr align="left">
+      <td width="60%" class="Pagetxt" bgcolor="#FFFFFF">Facebook </td>
+      <!--<td width="40%" class="Pagetxt" bgcolor="#FFFFFF">COMM (228) 871-2531</td>-->
+      </tr>
+      <tr align="left">
+      <td>BOL/Uniform Regulations</td>
+      <!--<td>COMM (228) 871-2531</td>-->
+      </tr>
+      <tr align="left">
+      <td bgcolor="#FFFFFF">USA/USAF</td>
+      <!--<td bgcolor="#FFFFFF">COMM (228) 871- 2761</td>-->
+      </tr>
+      <tr align="left">
+      <td>Military One Source</td>
+      <!--<td>COMM (228) 871- 2531</td>-->
+      </tr>
+      <tr align="left">
+      <td bgcolor="#FFFFFF">NFASS Mobile App</td>
+      <!--<td bgcolor="#FFFFFF">COMM (228) 871-2280</td>-->
+      </tr>
+      <tr align="left">
+      <td>Navy News RSS</td>
+      <!--<td>COMM (228) 871-3365</td>-->
+      </tr>
+      
+    </table>
+   </div>
+  
+  <!--Left Panel Pages-->
+  
     
     <!--Right Panel-->
     <div data-role="panel" id="right-panel-cmds" data-display="overlay" data-position="right">
