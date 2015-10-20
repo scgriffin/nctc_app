@@ -19,29 +19,14 @@
 
 <body>
 
-<!--CMDS-->
-<div data-role="page" id="cmds" data-url="cmds" data-theme="a">
+<!--members-->
+<div data-role="page" id="members" data-url="members" data-theme="a">
 
   <div data-role="header" data-position="fixed" data-tap-toggle="false">
     <h1>Naval Construction<br /> Training Center</h1>
-        <a href="#left-panel-cmds" data-icon="bars" data-iconpos="notext" 
-        data-shadow="false" data-iconshadow="false">Menu</a>
-        <a href="#right-panel-cmds" data-icon="bars" data-iconpos="notext" 
-        data-shadow="false" data-iconshadow="false">Disclosures</a>
-        
-  </div>
-  <br />
-  <br />
-  <div data-role="content">
-		<!--<div align="center"><h3>POC's</h3></div>-->    
-  
-   <input type="text" data-role="date" data-inline="false">
-   </div>
-  
-  <!--Left Panel Pages-->
-  <div data-role="panel" id="left-panel-cmds" data-display="overlay">
-  
-<ul data-role="listview">        
+        <a href="#popupBasic1" data-rel="popup" data-icon="bars" data-iconpos="notext" data-shadow="false" data-iconshadow="false" data-transition="pop">Menu</a>
+		<div data-role="popup" id="popupBasic1">
+          <ul data-role="listview">        
             <!--<li data-icon="delete"><a href="#" data-rel="close">Close</a></li>-->
             <li><a href="../index.html" rel="external">Home</a></li>
                         
@@ -73,48 +58,58 @@
             <li data-role="collapsible" data-inset="false" data-iconpos="right" data-content-theme="b">
               <h3>21st Century Sailor</h3>
               <ul data-role="listview">
-                <li><a href="nctc/twentyfirst.html#indoc-poc">Indoc/POC</a></li>
-                <li><a href="nctc/twentyfirst.html#csadd">CSADD</a></li>
-                <li><a href="nctc/twentyfirst.html#other">Other</a></li>
+                <li><a href="twentyfirst.html#indoc-poc">Indoc/POC</a></li>
+                <li><a href="twentyfirst.html#csadd">CSADD</a></li>
+                <li><a href="twentyfirst.html#other">Other</a></li>
               </ul>
             </li>
             <!-- /collapsible -->
 			<li data-role="collapsible" data-inset="false" data-iconpos="right" data-content-theme="b">
               <h3>Links</h3>
               <ul data-role="listview">
-                <li><a href="#cmds">Commands</a></li>
-                <li><a href="#study">Study</a></li>
-                <li><a href="#bsi">Base Support Infomation</a></li>
+                <li><a href="links.html#cmds">Commands</a></li>
+                <li><a href="links.html#study">Study</a></li>
+                <li><a href="links.html#bsi">Base Support Infomation</a></li>
               </ul>
             </li>
             <!-- /collapsible -->
 			<li data-role="collapsible" data-inset="false" data-iconpos="right" data-content-theme="b">
               <h3>Diversity</h3>
               <ul data-role="listview">
-                <li><a href="nctc/diversity.html#members" rel="external">Members</a></li>
-                <li><a href="nctc/diversity.html#dfocus" rel="external">Diversity Focus</a></li>
-                <li><a href="nctc/diversity.html#dcalendar" rel="external">Calendar</a></li>
+                <li><a href="diversity.html#members" rel="external">Members</a></li>
+                <li><a href="diversity.html#dfocus" rel="external">Diversity Focus</a></li>
+                <li><a href="diversity.html#dcalendar" rel="external">Calendar</a></li>
               </ul>
             </li>
             <!-- /collapsible -->
 			<li data-role="collapsible" data-inset="false" data-iconpos="right" data-content-theme="b">
               <h3>Current Events</h3>
               <ul data-role="listview">
-                <li><a href="nctc/events.html#comservice" rel="external">Community Service</a></li>
-                <li><a href="nctc/events.html#cecalendar" rel="external">Calendar</a></li>
-                <li><a href="nctc/events.html#wysk" rel="external">What you should know</a></li>
+                <li><a href="events.html#comservice" rel="external">Community Service</a></li>
+                <li><a href="events.html#cecalendar" rel="external">Calendar</a></li>
+                <li><a href="events.html#wysk" rel="external">What you should know</a></li>
               </ul>
             </li>
             <!-- /collapsible -->
-        </ul>
-   
+        </ul>  
+            
+		</div>
+        <a href="#right-panel-members" data-icon="bars" data-iconpos="notext" 
+        data-shadow="false" data-iconshadow="false">Disclosures</a>
         
-    </div> 
-   
-    <!-- /panel -->
+  </div>
+  <br />
+  <br />
+  <div data-role="content">
+		<!--<div align="center"><h3>POC's</h3></div>-->    
+  
+   <input type="text" data-role="date" data-inline="false">
+   </div>
+  
+  
     
     <!--Right Panel-->
-    <div data-role="panel" id="right-panel-cmds" data-display="overlay" data-position="right">
+    <div data-role="panel" id="right-panel-members" data-display="overlay" data-position="right">
         <ul data-role="listview" data-icon="false">
             <!--<li data-icon="delete"><a href="#" data-rel="close">Close</a></li>-->
             <!--<li data-role="list-divider">Share this page</li>-->
@@ -161,57 +156,14 @@
 
 <!--End CMD-->
 
-<!--Study-->
-<div data-role="page" id="study" data-url="study" data-theme="a">
+<!--DFocus-->
+<div data-role="page" id="dfocus" data-url="dfocus" data-theme="a">
 
   <div data-role="header" data-position="fixed" data-tap-toggle="false">
     <h1>Naval Construction<br /> Training Center</h1>
-        <a href="#left-panel-study" data-icon="bars" data-iconpos="notext" 
-        data-shadow="false" data-iconshadow="false">Menu</a>
-        <a href="#right-panel-study" data-icon="bars" data-iconpos="notext" 
-        data-shadow="false" data-iconshadow="false">Disclosures</a>
-        
-  </div>
-   
-  <div data-role="content">
-		<table Cellpadding="2" Cellspacing="0" align="Center" bgcolor="#F2F2F2">
-      <tr>
-      <td colspan="2" align="center" class="Pagesubhdr" bgcolor="#CFCFCF"><b>Study Links</b></td>
-      </tr>
-      <tr align="left">
-      <td width="60%" class="Pagetxt" bgcolor="#FFFFFF">BU/SW A School </td>
-      <!--<td width="40%" class="Pagetxt" bgcolor="#FFFFFF">COMM (228) 871-2531</td>-->
-      </tr>
-      <tr align="left">
-      <td>Math</td>
-      <!--<td>COMM (228) 871-2531</td>-->
-      </tr>
-      <tr align="left">
-      <td bgcolor="#FFFFFF">How to Videos</td>
-      <!--<td bgcolor="#FFFFFF">COMM (228) 871- 2761</td>-->
-      </tr>
-      <tr align="left">
-      <td>Bibliographies</td>
-      <!--<td>COMM (228) 871- 2531</td>-->
-      </tr>
-      <tr align="left">
-      <td bgcolor="#FFFFFF">NKO</td>
-      <!--<td bgcolor="#FFFFFF">COMM (228) 871-2280</td>-->
-      </tr>
-      <tr align="left">
-      <td>Seabee Song</td>
-      <!--<td>COMM (228) 871-3365</td>-->
-      </tr>
-      
-    </table>
-
-  
-</div>
-  
-  
-  <div data-role="panel" id="left-panel-study" data-display="overlay">
-        
-        <ul data-role="listview">        
+         <a href="#popupBasic2" data-rel="popup" data-icon="bars" data-iconpos="notext" data-shadow="false" data-iconshadow="false" data-transition="pop">Menu</a>
+		<div data-role="popup" id="popupBasic2">
+          <ul data-role="listview">        
             <!--<li data-icon="delete"><a href="#" data-rel="close">Close</a></li>-->
             <li><a href="../index.html" rel="external">Home</a></li>
                         
@@ -252,18 +204,18 @@
 			<li data-role="collapsible" data-inset="false" data-iconpos="right" data-content-theme="b">
               <h3>Links</h3>
               <ul data-role="listview">
-                <li><a href="#cmds">Commands</a></li>
-                <li><a href="#study">Study</a></li>
-                <li><a href="#bsi">Base Support Infomation</a></li>
+                <li><a href="nctc/#cmds">Commands</a></li>
+                <li><a href="nctc/#study">Study</a></li>
+                <li><a href="nctc/#bsi">Base Support Infomation</a></li>
               </ul>
             </li>
             <!-- /collapsible -->
 			<li data-role="collapsible" data-inset="false" data-iconpos="right" data-content-theme="b">
               <h3>Diversity</h3>
               <ul data-role="listview">
-                <li><a href="nctc/diversity.html#members" rel="external">Members</a></li>
-                <li><a href="nctc/diversity.html#dfocus" rel="external">Diversity Focus</a></li>
-                <li><a href="nctc/diversity.html#dcalendar" rel="external">Calendar</a></li>
+                <li><a href="diversity.html#members" rel="external">Members</a></li>
+                <li><a href="diversity.html#dfocus" rel="external">Diversity Focus</a></li>
+                <li><a href="diversity.html#dcalendar" rel="external">Calendar</a></li>
               </ul>
             </li>
             <!-- /collapsible -->
@@ -276,13 +228,52 @@
               </ul>
             </li>
             <!-- /collapsible -->
-        </ul>
-
+        </ul>  
+            
+		</div>
+        <a href="#right-panel-dfocus" data-icon="bars" data-iconpos="notext" 
+        data-shadow="false" data-iconshadow="false">Disclosures</a>
         
-    </div><!-- /panel -->
+  </div>
+   
+  <div data-role="content">
+		<table Cellpadding="2" Cellspacing="0" align="Center" bgcolor="#F2F2F2">
+      <tr>
+      <td colspan="2" align="center" class="Pagesubhdr" bgcolor="#CFCFCF"><b>Study Links</b></td>
+      </tr>
+      <tr align="left">
+      <td width="60%" class="Pagetxt" bgcolor="#FFFFFF">BU/SW A School </td>
+      <!--<td width="40%" class="Pagetxt" bgcolor="#FFFFFF">COMM (228) 871-2531</td>-->
+      </tr>
+      <tr align="left">
+      <td>Math</td>
+      <!--<td>COMM (228) 871-2531</td>-->
+      </tr>
+      <tr align="left">
+      <td bgcolor="#FFFFFF">How to Videos</td>
+      <!--<td bgcolor="#FFFFFF">COMM (228) 871- 2761</td>-->
+      </tr>
+      <tr align="left">
+      <td>Bibliographies</td>
+      <!--<td>COMM (228) 871- 2531</td>-->
+      </tr>
+      <tr align="left">
+      <td bgcolor="#FFFFFF">NKO</td>
+      <!--<td bgcolor="#FFFFFF">COMM (228) 871-2280</td>-->
+      </tr>
+      <tr align="left">
+      <td>Seabee Song</td>
+      <!--<td>COMM (228) 871-3365</td>-->
+      </tr>
+      
+    </table>
+
+  
+</div>
+  
     
     
-    <div data-role="panel" id="right-panel-study" data-display="overlay" data-position="right">
+    <div data-role="panel" id="right-panel-dfocus" data-display="overlay" data-position="right">
         <ul data-role="listview" data-icon="false">
             <!--<li data-icon="delete"><a href="#" data-rel="close">Close</a></li>-->
             <!--<li data-role="list-divider">Share this page</li>-->
@@ -332,16 +323,84 @@
 </div>
 
 
-<!--End study-->
+<!--End DFocus-->
 
-<!--Base Support Info-->
-<div data-role="page" id="bsi" data-url="bsi" data-theme="a">
+<!--Dcalendar-->
+<div data-role="page" id="dcalendar" data-url="dcalendar" data-theme="a">
 
  <div data-role="header" data-position="fixed" data-tap-toggle="false">
     <h1>Naval Construction<br /> Training Center</h1>
-        <a href="#left-panel-bsi" data-icon="bars" data-iconpos="notext" 
-        data-shadow="false" data-iconshadow="false">Menu</a>
-        <a href="#right-panel-bsi" data-icon="bars" data-iconpos="notext" 
+         <a href="#popupBasic3" data-rel="popup" data-icon="bars" data-iconpos="notext" data-shadow="false" data-iconshadow="false" data-transition="pop">Menu</a>
+		<div data-role="popup" id="popupBasic3">
+          <ul data-role="listview">        
+            <!--<li data-icon="delete"><a href="#" data-rel="close">Close</a></li>-->
+            <li><a href="../index.html" rel="external">Home</a></li>
+                        
+            <li data-role="collapsible" data-inset="false" data-iconpos="right" data-content-theme="b">
+              <h3>Command</h3>
+              <ul data-role="listview">
+                <li><a href="command.html#cmd-mission" rel="external">Mission</a></li>
+                <li><a href="command.html#current-events" rel="external">Current Events</a></li>
+                <li><a href="command.html#n2n" rel="external">Important Information</a></li>
+              </ul>
+            </li><!-- /collapsible -->
+           <li data-role="collapsible" data-inset="false" data-iconpos="right" data-content-theme="b">
+              <h3>Staff</h3>
+              <ul data-role="listview">
+                <li><a href="staff.html#cmd-org" rel="external">Command Org</a></li>
+                <li><a href="staff.html#training" rel="external">Training</a></li>
+                <li><a href="staff.html#staff-focus" rel="external">Staff in Focus</a></li>
+              </ul>
+            </li><!-- /collapsible -->
+            <li data-role="collapsible" data-inset="false" data-iconpos="right" data-content-theme="b">
+              <h3>Students</h3>
+              <ul data-role="listview">
+                <li><a href="students.html#adv-school" rel="external">Advanced Schools</a></li>
+                <li><a href="students.html#a-school" rel="external">"A" Schools</a></li>
+                <li><a href="students.html#liberty" rel="external">Liberty Events</a></li>
+              </ul>
+            </li>
+            <!-- /collapsible --> 
+            <li data-role="collapsible" data-inset="false" data-iconpos="right" data-content-theme="b">
+              <h3>21st Century Sailor</h3>
+              <ul data-role="listview">
+                <li><a href="nctc/twentyfirst.html#indoc-poc">Indoc/POC</a></li>
+                <li><a href="nctc/twentyfirst.html#csadd">CSADD</a></li>
+                <li><a href="nctc/twentyfirst.html#other">Other</a></li>
+              </ul>
+            </li>
+            <!-- /collapsible -->
+			<li data-role="collapsible" data-inset="false" data-iconpos="right" data-content-theme="b">
+              <h3>Links</h3>
+              <ul data-role="listview">
+                <li><a href="nctc/#cmds">Commands</a></li>
+                <li><a href="nctc/#study">Study</a></li>
+                <li><a href="nctc/#bsi">Base Support Infomation</a></li>
+              </ul>
+            </li>
+            <!-- /collapsible -->
+			<li data-role="collapsible" data-inset="false" data-iconpos="right" data-content-theme="b">
+              <h3>Diversity</h3>
+              <ul data-role="listview">
+                <li><a href="diversity.html#members" rel="external">Members</a></li>
+                <li><a href="diversity.html#dfocus" rel="external">Diversity Focus</a></li>
+                <li><a href="diversity.html#dcalendar" rel="external">Calendar</a></li>
+              </ul>
+            </li>
+            <!-- /collapsible -->
+			<li data-role="collapsible" data-inset="false" data-iconpos="right" data-content-theme="b">
+              <h3>Current Events</h3>
+              <ul data-role="listview">
+                <li><a href="nctc/events.html#comservice" rel="external">Community Service</a></li>
+                <li><a href="nctc/events.html#cecalendar" rel="external">Calendar</a></li>
+                <li><a href="nctc/events.html#wysk" rel="external">What you should know</a></li>
+              </ul>
+            </li>
+            <!-- /collapsible -->
+        </ul>  
+            
+		</div>
+        <a href="#right-panel-dcalendar" data-icon="bars" data-iconpos="notext" 
         data-shadow="false" data-iconshadow="false">Disclosures</a>
         
   </div>
@@ -405,80 +464,11 @@
     </table>
 </div>
 
-  <div data-role="panel" id="left-panel-bsi" data-display="overlay">
-        
-        <ul data-role="listview">        
-            <!--<li data-icon="delete"><a href="#" data-rel="close">Close</a></li>-->
-            <li><a href="../index.html" rel="external">Home</a></li>
-                        
-            <li data-role="collapsible" data-inset="false" data-iconpos="right" data-content-theme="b">
-              <h3>Command</h3>
-              <ul data-role="listview">
-                <li><a href="command.html#cmd-mission" rel="external">Mission</a></li>
-                <li><a href="command.html#current-events" rel="external">Current Events</a></li>
-                <li><a href="command.html#n2n" rel="external">Important Information</a></li>
-              </ul>
-            </li><!-- /collapsible -->
-           <li data-role="collapsible" data-inset="false" data-iconpos="right" data-content-theme="b">
-              <h3>Staff</h3>
-              <ul data-role="listview">
-                <li><a href="staff.html#cmd-org" rel="external">Command Org</a></li>
-                <li><a href="staff.html#training" rel="external">Training</a></li>
-                <li><a href="staff.html#staff-focus" rel="external">Staff in Focus</a></li>
-              </ul>
-            </li><!-- /collapsible -->
-            <li data-role="collapsible" data-inset="false" data-iconpos="right" data-content-theme="b">
-              <h3>Students</h3>
-              <ul data-role="listview">
-                <li><a href="students.html#adv-school" rel="external">Advanced Schools</a></li>
-                <li><a href="students.html#a-school" rel="external">"A" Schools</a></li>
-                <li><a href="students.html#liberty" rel="external">Liberty Events</a></li>
-              </ul>
-            </li>
-            <!-- /collapsible --> 
-            <li data-role="collapsible" data-inset="false" data-iconpos="right" data-content-theme="b">
-              <h3>21st Century Sailor</h3>
-              <ul data-role="listview">
-                <li><a href="nctc/twentyfirst.html#indoc-poc">Indoc/POC</a></li>
-                <li><a href="nctc/twentyfirst.html#csadd">CSADD</a></li>
-                <li><a href="nctc/twentyfirst.html#other">Other</a></li>
-              </ul>
-            </li>
-            <!-- /collapsible -->
-			<li data-role="collapsible" data-inset="false" data-iconpos="right" data-content-theme="b">
-              <h3>Links</h3>
-              <ul data-role="listview">
-                <li><a href="#cmds">Commands</a></li>
-                <li><a href="#study">Study</a></li>
-                <li><a href="#bsi">Base Support Infomation</a></li>
-              </ul>
-            </li>
-            <!-- /collapsible -->
-			<li data-role="collapsible" data-inset="false" data-iconpos="right" data-content-theme="b">
-              <h3>Diversity</h3>
-              <ul data-role="listview">
-                <li><a href="nctc/diversity.html#members" rel="external">Members</a></li>
-                <li><a href="nctc/diversity.html#dfocus" rel="external">Diversity Focus</a></li>
-                <li><a href="nctc/diversity.html#dcalendar" rel="external">Calendar</a></li>
-              </ul>
-            </li>
-            <!-- /collapsible -->
-			<li data-role="collapsible" data-inset="false" data-iconpos="right" data-content-theme="b">
-              <h3>Current Events</h3>
-              <ul data-role="listview">
-                <li><a href="nctc/events.html#comservice" rel="external">Community Service</a></li>
-                <li><a href="nctc/events.html#cecalendar" rel="external">Calendar</a></li>
-                <li><a href="nctc/events.html#wysk" rel="external">What you should know</a></li>
-              </ul>
-            </li>
-            <!-- /collapsible -->
-        </ul>
-
-        
-    </div><!-- /panel -->
+  
+  
     
     
-    <div data-role="panel" id="right-panel-bsi" data-display="overlay" data-position="right">
+    <div data-role="panel" id="right-panel-dcalendar" data-display="overlay" data-position="right">
         <ul data-role="listview" data-icon="false">
             <!--<li data-icon="delete"><a href="#" data-rel="close">Close</a></li>-->
             <!--<li data-role="list-divider">Share this page</li>-->
