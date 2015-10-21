@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
 <head>
-<title>Untitled Document</title>
+<title>Events</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <link rel="stylesheet" type="text/css" href="../scripts2/jquery.mobile-1.4.5.min.css">
@@ -13,48 +13,15 @@
 <script src="../scripts2/jquery-1.11.3.min.js"></script>
 <script src="../scripts2/jquery.mobile-1.4.5.js"></script>
 
-<!--<script type="text/javascript">
-$(document).ready(function() 
-	{
-		$('a.anchor-link').click(function(e) 
-	{  
-      // Extract the hash in the target.         
-	  // No hash means that the target is not an <a> tag but one of its children (i.e. an <h3>)       
-	   hash =  $(e.target).get(0).hash;        
-if (!hash) {
-		  hash = $(e.target).parents('a').get(0).hash;  
-	  }       
-	  // Find the page it is contained into (or it is itself)      
-	    page = $(hash).closest('div[data-role="page"]').get(0);         
-	    // Look if we are already in that page      
-	if ($(page).get(0) != $.mobile.activePage.get(0)) {    
-		       // Change to it and scroll to the anchor           
-		   $.mobile.changePage($(page));           
-	    $(page).on('pageshow', function(){             
-	  $.mobile.silentScroll($(hash).offset().top);        
-	});     
-	    } else {      
-	      // Just scroll to the anchor      
-	     $.mobile.silentScroll($(hash).offset().top);   
-	  } 
-   });
-});
-
-</script>-->
-
 </head>
 
 <body>
 
-<!--Left Panel Pages-->
-
-<!--Cmd Org-->
-
-<div data-role="page" id="cmd-org" data-url="cmd-org" data-theme="a">
-
+<!--COMSERVICE-->
+<div data-role="page" id="comservice" data-url="comservice" data-theme="a">
   <div data-role="header" data-position="fixed" data-tap-toggle="false">
     <h1>Naval Construction<br /> Training Center</h1>
-        <a href="#popupBasic1" data-rel="popup" data-icon="bars" data-iconpos="notext" data-shadow="false" data-iconshadow="false" data-transition="slide">Menu</a>
+    <a href="#popupBasic1" data-rel="popup" data-icon="bars" data-iconpos="notext" data-shadow="false" data-iconshadow="false" data-transition="slidedown">Menu</a>
 		<div data-role="popup" id="popupBasic1">
           <ul data-role="listview">        
             <!--<li data-icon="delete"><a href="#" data-rel="close">Close</a></li>-->
@@ -68,12 +35,12 @@ if (!hash) {
                 <li><a href="command.html#n2n" rel="external">Important Information</a></li>
               </ul>
             </li><!-- /collapsible -->
-            <li data-role="collapsible" data-inset="false" data-iconpos="right" data-content-theme="b">
+           <li data-role="collapsible" data-inset="false" data-iconpos="right" data-content-theme="b">
               <h3>Staff</h3>
               <ul data-role="listview">
-                <li><a href="#cmd-org">Command Org</a></li>
-                <li><a href="#training">Training</a></li>
-                <li><a href="#staff-focus">Staff in Focus</a></li>
+                <li><a href="staff.html#cmd-org" rel="external">Command Org</a></li>
+                <li><a href="staff.html#training" rel="external">Training</a></li>
+                <li><a href="staff.html#staff-focus" rel="external">Staff in Focus</a></li>
               </ul>
             </li><!-- /collapsible -->
             <li data-role="collapsible" data-inset="false" data-iconpos="right" data-content-theme="b">
@@ -85,16 +52,16 @@ if (!hash) {
               </ul>
             </li>
             <!-- /collapsible --> 
-             <li data-role="collapsible" data-inset="false" data-iconpos="right" data-content-theme="b">
+            <li data-role="collapsible" data-inset="false" data-iconpos="right" data-content-theme="b">
               <h3>21st Century Sailor</h3>
               <ul data-role="listview">
-                <li><a href="twentyfirst.html#indoc-poc" rel="external">Indoc/POC</a></li>
-                <li><a href="twentyfirst.html#csadd" rel="external">CSADD</a></li>
-                <li><a href="twentyfirst.html#other" rel="external">Other</a></li>
+                <li><a href="twentyfirst.html#indoc-poc">Indoc/POC</a></li>
+                <li><a href="twentyfirst.html#csadd">CSADD</a></li>
+                <li><a href="twentyfirst.html#other">Other</a></li>
               </ul>
             </li>
             <!-- /collapsible -->
-            <li data-role="collapsible" data-inset="false" data-iconpos="right" data-content-theme="b">
+			<li data-role="collapsible" data-inset="false" data-iconpos="right" data-content-theme="b">
               <h3>Links</h3>
               <ul data-role="listview">
                 <li><a href="links.html#cmds">Commands</a></li>
@@ -115,35 +82,32 @@ if (!hash) {
 			<li data-role="collapsible" data-inset="false" data-iconpos="right" data-content-theme="b">
               <h3>Current Events</h3>
               <ul data-role="listview">
-                <li><a href="events.html#comservice" rel="external">Community Service</a></li>
-                <li><a href="events.html#cecalendar" rel="external">Calendar</a></li>
-                <li><a href="events.html#wysk" rel="external">What you should know</a></li>
+                <li><a href="#comservice" rel="external">Community Service</a></li>
+                <li><a href="#cecalendar" rel="external">Calendar</a></li>
+                <li><a href="#wysk" rel="external">What you should know</a></li>
               </ul>
             </li>
             <!-- /collapsible -->
         </ul>  
             
 		</div>
-        <a href="#right-panel-cmd-org" data-icon="bars" data-iconpos="notext" 
-        data-shadow="false" data-iconshadow="false">Disclosures</a>
-        <div data-role="navbar" data-grid="a">
-            	<ul>
-                	<li><a href="#">Staff Sections</a></li>
-                    <li><a href="#">Company Sections</a></li>
-                                       
-                </ul>
-            </div>
+              
+        <a href="#right-panel-comservice" data-icon="bars" data-iconpos="notext" data-shadow="false" data-iconshadow="false">Disclosures</a>
+        
   </div>
-  
+  <br />
+  <br />
   <div data-role="content">
-		<div align="center">
-        	<h3>Command Organization</h3>
-    	</div>    
+		<!--<div align="center"><h3>POC's</h3></div>-->    
   
+   <p>Community Service</p>
+   
    </div>
   
+   
     
-    <div data-role="panel" id="right-panel-cmd-org" data-display="overlay" data-position="right">
+    <!--Right Panel-->
+    <div data-role="panel" id="right-panel-comservice" data-display="overlay" data-position="right">
         <ul data-role="listview" data-icon="false">
             <!--<li data-icon="delete"><a href="#" data-rel="close">Close</a></li>-->
             <!--<li data-role="list-divider">Share this page</li>-->
@@ -175,6 +139,7 @@ if (!hash) {
     </div><!-- /panel -->
   
   <div data-role="footer" data-position="fixed" data-tap-toggle="false">
+ 
     <div align="center">
         	<a href="http://www.navy.com" rel="external" target="_blank"><img src="http://www.netc.navy.mil/images/ico_navyj.gif" /></a>
             <a href="http://www.navy.mil" rel="external" target="_blank"><img src="http://www.netc.navy.mil/images/ico_usnavy.gif" /></a>
@@ -187,34 +152,33 @@ if (!hash) {
   </div>
 </div>
 
-<!--End Cmd Org-->
+<!--End COMSERVICE-->
 
-
-<!--Training-->
-<div data-role="page" id="training" data-url="training" data-theme="a">
+<!--CECALENDAR-->
+<div data-role="page" id="cecalendar" data-url="cecalendar" data-theme="a">
 
   <div data-role="header" data-position="fixed" data-tap-toggle="false">
     <h1>Naval Construction<br /> Training Center</h1>
-        <a href="#popupBasic2" data-rel="popup" data-icon="bars" data-iconpos="notext" data-shadow="false" data-iconshadow="false" data-transition="flow">Menu</a>
+        <a href="#popupBasic2" data-rel="popup" data-icon="bars" data-iconpos="notext" data-shadow="false" data-iconshadow="false" data-transition="fade">Menu</a>
 		<div data-role="popup" id="popupBasic2">
-           <ul data-role="listview">        
+          <ul data-role="listview">        
             <!--<li data-icon="delete"><a href="#" data-rel="close">Close</a></li>-->
             <li><a href="../index.html" rel="external">Home</a></li>
                         
             <li data-role="collapsible" data-inset="false" data-iconpos="right" data-content-theme="b">
               <h3>Command</h3>
               <ul data-role="listview">
-                <li><a href="#cmd-mission">Mission</a></li>
-                <li><a href="#current-events">Current Events</a></li>
-                <li><a href="#n2n">Important Information</a></li>
+                <li><a href="command.html#cmd-mission" rel="external">Mission</a></li>
+                <li><a href="command.html#current-events" rel="external">Current Events</a></li>
+                <li><a href="command.html#n2n" rel="external">Important Information</a></li>
               </ul>
             </li><!-- /collapsible -->
-            <li data-role="collapsible" data-inset="false" data-iconpos="right" data-content-theme="b">
+           <li data-role="collapsible" data-inset="false" data-iconpos="right" data-content-theme="b">
               <h3>Staff</h3>
               <ul data-role="listview">
-                <li><a href="#cmd-org">Command Org</a></li>
-                <li><a href="#training">Training</a></li>
-                <li><a href="#staff-focus">Staff in Focus</a></li>
+                <li><a href="staff.html#cmd-org" rel="external">Command Org</a></li>
+                <li><a href="staff.html#training" rel="external">Training</a></li>
+                <li><a href="staff.html#staff-focus" rel="external">Staff in Focus</a></li>
               </ul>
             </li><!-- /collapsible -->
             <li data-role="collapsible" data-inset="false" data-iconpos="right" data-content-theme="b">
@@ -226,16 +190,16 @@ if (!hash) {
               </ul>
             </li>
             <!-- /collapsible --> 
-             <li data-role="collapsible" data-inset="false" data-iconpos="right" data-content-theme="b">
+            <li data-role="collapsible" data-inset="false" data-iconpos="right" data-content-theme="b">
               <h3>21st Century Sailor</h3>
               <ul data-role="listview">
-                <li><a href="twentyfirst.html#indoc-poc" rel="external">Indoc/POC</a></li>
-                <li><a href="twentyfirst.html#csadd" rel="external">CSADD</a></li>
-                <li><a href="twentyfirst.html#other" rel="external">Other</a></li>
+                <li><a href="twentyfirst.html#indoc-poc">Indoc/POC</a></li>
+                <li><a href="twentyfirst.html#csadd">CSADD</a></li>
+                <li><a href="twentyfirst.html#other">Other</a></li>
               </ul>
             </li>
             <!-- /collapsible -->
-            <li data-role="collapsible" data-inset="false" data-iconpos="right" data-content-theme="b">
+			<li data-role="collapsible" data-inset="false" data-iconpos="right" data-content-theme="b">
               <h3>Links</h3>
               <ul data-role="listview">
                 <li><a href="links.html#cmds">Commands</a></li>
@@ -262,29 +226,51 @@ if (!hash) {
               </ul>
             </li>
             <!-- /collapsible -->
-        </ul> 
-            
+        </ul>
+           
 		</div>
-        <a href="#right-panel-training" data-icon="bars" data-iconpos="notext" 
+        <a href="#right-panel-cecalendar" data-icon="bars" data-iconpos="notext" 
         data-shadow="false" data-iconshadow="false">Disclosures</a>
-        <div data-role="navbar" data-grid="b">
-            	<ul>
-                	<li><a href="#">Annual</a></li>
-                    <li><a href="#">Short Notice Req</a></li>
-                    <li><a href="#">ESAMS</a></li>                   
-                </ul>
-            </div>
+        
   </div>
-  
+   
   <div data-role="content">
-		<div align="center">
-        	<h3>Training</h3>
-    	</div>    
+		<table Cellpadding="2" Cellspacing="0" align="Center" bgcolor="#F2F2F2">
+      <tr>
+      <td colspan="2" align="center" class="Pagesubhdr" bgcolor="#CFCFCF"><b>Study Links</b></td>
+      </tr>
+      <tr align="left">
+      <td width="60%" class="Pagetxt" bgcolor="#FFFFFF">BU/SW A School </td>
+      <!--<td width="40%" class="Pagetxt" bgcolor="#FFFFFF">COMM (228) 871-2531</td>-->
+      </tr>
+      <tr align="left">
+      <td>Math</td>
+      <!--<td>COMM (228) 871-2531</td>-->
+      </tr>
+      <tr align="left">
+      <td bgcolor="#FFFFFF">How to Videos</td>
+      <!--<td bgcolor="#FFFFFF">COMM (228) 871- 2761</td>-->
+      </tr>
+      <tr align="left">
+      <td>Bibliographies</td>
+      <!--<td>COMM (228) 871- 2531</td>-->
+      </tr>
+      <tr align="left">
+      <td bgcolor="#FFFFFF">NKO</td>
+      <!--<td bgcolor="#FFFFFF">COMM (228) 871-2280</td>-->
+      </tr>
+      <tr align="left">
+      <td>Seabee Song</td>
+      <!--<td>COMM (228) 871-3365</td>-->
+      </tr>
+      
+    </table>
+
   
-   </div>
-    
-    
-    <div data-role="panel" id="right-panel-training" data-display="overlay" data-position="right">
+</div>
+  
+  
+    <div data-role="panel" id="right-panel-cecalendar" data-display="overlay" data-position="right">
         <ul data-role="listview" data-icon="false">
             <!--<li data-icon="delete"><a href="#" data-rel="close">Close</a></li>-->
             <!--<li data-role="list-divider">Share this page</li>-->
@@ -313,9 +299,14 @@ if (!hash) {
         <img src="https://c2.staticflickr.com/6/5106/5579860783_a17e6b4b07.jpg" />
         
         </div>
+        
     </div><!-- /panel -->
   
+  	
+  
   <div data-role="footer" data-position="fixed" data-tap-toggle="false">
+  	
+ 
     <div align="center">
         	<a href="http://www.navy.com" rel="external" target="_blank"><img src="http://www.netc.navy.mil/images/ico_navyj.gif" /></a>
             <a href="http://www.navy.mil" rel="external" target="_blank"><img src="http://www.netc.navy.mil/images/ico_usnavy.gif" /></a>
@@ -328,15 +319,15 @@ if (!hash) {
   </div>
 </div>
 
-<!--End Training-->
 
+<!--End CECALENDAR-->
 
-<!--Staff in Focus-->
-<div data-role="page" id="staff-focus" data-url="staff-focus" data-theme="a">
+<!--wysk-->
+<div data-role="page" id="wysk" data-url="wysk" data-theme="a">
 
-  <div data-role="header" data-position="fixed" data-tap-toggle="false">
+ <div data-role="header" data-position="fixed" data-tap-toggle="false">
     <h1>Naval Construction<br /> Training Center</h1>
-        <a href="#popupBasic3" data-rel="popup" data-icon="bars" data-iconpos="notext" data-shadow="false" data-iconshadow="false" data-transition="slidedown">Menu</a>
+        <a href="#popupBasic3" data-rel="popup" data-icon="bars" data-iconpos="notext" data-shadow="false" data-iconshadow="false" data-transition="slideup">Menu</a>
 		<div data-role="popup" id="popupBasic3">
           <ul data-role="listview">        
             <!--<li data-icon="delete"><a href="#" data-rel="close">Close</a></li>-->
@@ -345,17 +336,17 @@ if (!hash) {
             <li data-role="collapsible" data-inset="false" data-iconpos="right" data-content-theme="b">
               <h3>Command</h3>
               <ul data-role="listview">
-                <li><a href="#cmd-mission">Mission</a></li>
-                <li><a href="#current-events">Current Events</a></li>
-                <li><a href="#n2n">Important Information</a></li>
+                <li><a href="command.html#cmd-mission" rel="external">Mission</a></li>
+                <li><a href="command.html#current-events" rel="external">Current Events</a></li>
+                <li><a href="command.html#n2n" rel="external">Important Information</a></li>
               </ul>
             </li><!-- /collapsible -->
-            <li data-role="collapsible" data-inset="false" data-iconpos="right" data-content-theme="b">
+           <li data-role="collapsible" data-inset="false" data-iconpos="right" data-content-theme="b">
               <h3>Staff</h3>
               <ul data-role="listview">
-                <li><a href="#cmd-org">Command Org</a></li>
-                <li><a href="#training">Training</a></li>
-                <li><a href="#staff-focus">Staff in Focus</a></li>
+                <li><a href="staff.html#cmd-org" rel="external">Command Org</a></li>
+                <li><a href="staff.html#training" rel="external">Training</a></li>
+                <li><a href="staff.html#staff-focus" rel="external">Staff in Focus</a></li>
               </ul>
             </li><!-- /collapsible -->
             <li data-role="collapsible" data-inset="false" data-iconpos="right" data-content-theme="b">
@@ -367,16 +358,16 @@ if (!hash) {
               </ul>
             </li>
             <!-- /collapsible --> 
-             <li data-role="collapsible" data-inset="false" data-iconpos="right" data-content-theme="b">
+            <li data-role="collapsible" data-inset="false" data-iconpos="right" data-content-theme="b">
               <h3>21st Century Sailor</h3>
               <ul data-role="listview">
-                <li><a href="twentyfirst.html#indoc-poc" rel="external">Indoc/POC</a></li>
-                <li><a href="twentyfirst.html#csadd" rel="external">CSADD</a></li>
-                <li><a href="twentyfirst.html#other" rel="external">Other</a></li>
+                <li><a href="twentyfirst.html#indoc-poc">Indoc/POC</a></li>
+                <li><a href="twentyfirst.html#csadd">CSADD</a></li>
+                <li><a href="twentyfirst.html#other">Other</a></li>
               </ul>
             </li>
             <!-- /collapsible -->
-            <li data-role="collapsible" data-inset="false" data-iconpos="right" data-content-theme="b">
+			<li data-role="collapsible" data-inset="false" data-iconpos="right" data-content-theme="b">
               <h3>Links</h3>
               <ul data-role="listview">
                 <li><a href="links.html#cmds">Commands</a></li>
@@ -397,35 +388,82 @@ if (!hash) {
 			<li data-role="collapsible" data-inset="false" data-iconpos="right" data-content-theme="b">
               <h3>Current Events</h3>
               <ul data-role="listview">
-                <li><a href="events.html#comservice" rel="external">Community Service</a></li>
-                <li><a href="events.html#cecalendar" rel="external">Calendar</a></li>
-                <li><a href="events.html#wysk" rel="external">What you should know</a></li>
+                <li><a href="#comservice" rel="external">Community Service</a></li>
+                <li><a href="#cecalendar" rel="external">Calendar</a></li>
+                <li><a href="#wysk" rel="external">What you should know</a></li>
               </ul>
             </li>
             <!-- /collapsible -->
-        </ul> 
+        </ul>
+   
             
 		</div>
-        
-        <a href="#right-panel-staff-focus" data-icon="bars" data-iconpos="notext" 
+        <a href="#right-panel-wysk" data-icon="bars" data-iconpos="notext" 
         data-shadow="false" data-iconshadow="false">Disclosures</a>
-        <!--<div data-role="navbar" data-grid="b">
-            	<ul>
-                	<li><a href="#">Annual</a></li>
-                    <li><a href="#">Short Notice Req</a></li>
-                    <li><a href="#">ESAMS</a></li>                   
-                </ul>
-            </div>-->
+        
   </div>
   
   <div data-role="content">
-		<div align="center">
-        	<h3>Staff in Focus</h3>
-    	</div>    
+  <table Cellpadding="2" Cellspacing="0" align="Center" bgcolor="#F2F2F2">
+      <tr>
+      <td colspan="2" align="center" class="Pagesubhdr" bgcolor="#CFCFCF"><b>Base Support Information</b></td>
+      </tr>
+      <tr align="left">
+      
+      <td width="60%" class="Pagetxt" bgcolor="#FFFFFF"><strong>NEX</strong><br />
+      Building: 448<br />
+      Phone: (228) 864.1514<br />
+      Hours: Sunday 11 AM - 7 PM<br />
+      Monday - Saturday 9 AM - 9 PM<br /><br />
+      
+      
+       </td>
+
+      </tr>
+      <tr align="left">
+      
+      <td><strong>Commissary</strong><br />
+          Building: 32<br />
+          Phone: (228) 871.2039<br />
+          Hours: Mondays - Closed<br />
+          Tuesday and Thursday 9 AM to 7 PM<br />
+          Wednesdays, Fridays, and Saturdays 9 AM - 6 PM<br />
+          Sundays 11 AM - 6 PM<br /><br />
+            
+        </ul>      
+      </td>
+
+      </tr>
+      
+      <tr align="left">
+      
+      <td bgcolor="#FFFFFF">
+      <strong>Mini-Mart</strong><br />
+          Building: 340<br />
+          Phone: Mini Mart and Class (228) 863.4506<br />
+          Service Station: (228) 864.5527<br />
+          Hours: Mondays - Friday 6 AM - 9 PM<br />
+          Saturday 8 AM to 5 PM<br />
+          Sundays 10 AM - 6 PM<br /><br />
+      
+      </td>
+
+      </tr>
+      <tr align="left">
+      <td>
+      <strong>MWR</strong><br />
+          Address: 1706 Bainbridge Street<br />
+          Gulfport, MS 39501<br />
+          Phone: (228) 871.2538<br />
+          Hours: Not Listed<br /><br />
+      </td>     
+      </tr>
+      
+    </table>
+</div>
+
   
-   </div>
-    
-    <div data-role="panel" id="right-panel-staff-focus" data-display="overlay" data-position="right">
+    <div data-role="panel" id="right-panel-wysk" data-display="overlay" data-position="right">
         <ul data-role="listview" data-icon="false">
             <!--<li data-icon="delete"><a href="#" data-rel="close">Close</a></li>-->
             <!--<li data-role="list-divider">Share this page</li>-->
@@ -454,10 +492,11 @@ if (!hash) {
         <img src="https://c2.staticflickr.com/6/5106/5579860783_a17e6b4b07.jpg" />
         
         </div>
-    </div><!-- /panel -->
+        
+    </div><!-- /panel -->  	
   
   <div data-role="footer" data-position="fixed" data-tap-toggle="false">
-    <div align="center">
+      <div align="center">
         	<a href="http://www.navy.com" rel="external" target="_blank"><img src="http://www.netc.navy.mil/images/ico_navyj.gif" /></a>
             <a href="http://www.navy.mil" rel="external" target="_blank"><img src="http://www.netc.navy.mil/images/ico_usnavy.gif" /></a>
             <a href="http://www.public.navy.mil/donhr/pages/nofear.aspx" rel="external" target="_blank">
@@ -468,9 +507,6 @@ if (!hash) {
         </div>
   </div>
 </div>
-
-<!--End Staff in Focus-->
-
 
 </body>
 </html>
