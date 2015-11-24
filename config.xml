@@ -42,6 +42,7 @@
     </author>
 	
 	<access origin="*"/>
+	<access origin="http://formprocess.sebengriffin.com" subdomains="true"/>
 	<access origin="google.com"/>
 	<access origin="https://calendar.google.com" subdomains="true"/>
 	
